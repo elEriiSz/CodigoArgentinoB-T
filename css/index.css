@@ -35,3 +35,50 @@
     font-weight: 300;
     padding-top: 3vh;
 }
+
+.courses-section{
+    background-color: white;
+    height: 100vh;
+}
+
+.courses-section h1{
+    font-family: 'Raleway', sans-serif;
+    font-size: 3vw;
+    color: #2b2b2b;
+    text-align: center;
+    font-weight: 300;
+    padding-top: 9vh;
+}
+
+.courses .card{
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+/*
+868
+696
+cursos medidas pics
+x 78
+y 0
+*/
+
+.courses-section img{
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+}
+
+.courses-section .btn-secondary{
+    width: 100%;
+}
+
+.courses-section p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.3vw;
+    color: #2b2b2b;
+    text-align: justify;
+    font-weight: 300;
+    padding-top: 3vh;
+}
