@@ -63,29 +63,53 @@
     
       <div class="container-fluid know-us-section">
         <h1>Nuestro Equipo</h1>
-        <div class="members d-flex flex-wrap justify-content-center">
-            <div class="card">
-                <img src="./assets/img/team/matu.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h4>Matilde Tolosa</h4>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <!--Carrousel starts-->
+        <div id="carouselExample" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row item-team">
+                <div class="col-sm-5 d-flex justify-content-center align-items-center">
+                  <img src="./assets/img/team/matu.png">
+                </div>
+                <div class="col d-flex flex-column justify-content-center align-items-center">
+                  <h2>Matilde Tolosa</h2>
+                  <p>Fundadora, Directora Ejecutiva, Profesora</p>
                 </div>
               </div>
-              <div class="card">
-                <img src="./assets/img/team/nico.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h4>Nicolás Melia</h4>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+            <div class="carousel-item">
+              <div class="row item-team">
+                <div class="col-sm-5 d-flex justify-content-center align-items-center">
+                  <img src="./assets/img/team/nico.png">
+                </div>
+                <div class="col d-flex flex-column justify-content-center align-items-center">
+                  <h2>Nicolás Melia</h2>
+                  <p>Calidad Educativa, Profesor</p>
                 </div>
               </div>
-              <div class="card">
-                <img src="./assets/img/team/estefan.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h4>Estefano Capoferri</h4>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+            <div class="carousel-item">
+              <div class="row item-team">
+                <div class="col-sm-5 d-flex justify-content-center align-items-center">
+                  <img src="./assets/img/team/estefan.png">
+                </div>
+                <div class="col d-flex flex-column justify-content-center align-items-center">
+                  <h2>Estefano Capoferri</h2>
+                  <p>Profesor</p>
                 </div>
               </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
+        <!--Carrousel ends-->
       </div>
 
       <div class="container-fluid courses-section">

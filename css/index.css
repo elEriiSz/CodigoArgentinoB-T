@@ -103,3 +103,25 @@ y 0
 .card{
     height: fit-content;
 }
+
+.item-team{
+    background-color: white;
+    height: 60vh;
+    width: 80vw;
+    border-radius: 15px;
+    margin: 0 auto;
+}
+
+.item-team .col-sm-5:first-child{
+    border-radius: 15px;
+}
+
+.item-team .col{
+    border-radius: 15px;
+}
+
+.item-team img{
+    width: 23vw;
+    border-radius: 100%;
+    min-width: 200px;
+}
