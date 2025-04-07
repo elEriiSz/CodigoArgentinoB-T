@@ -2,11 +2,16 @@
 
 .nav-icon{
     width: 6vw;
+    min-width: 70px;
 }
 
 .know-us-section{
     background-color: #b6cadd;
-    height: 100vh;
+    /*height: 100vh;*/
+}
+
+.know-us-section .card{
+    width: 15rem;
 }
 
 .know-us-section h1{
@@ -37,8 +42,8 @@
 }
 
 .courses-section{
-    background-color: white;
-    height: 100vh;
+    background-color: #b6cadd;
+    /*height: 100vh;*/
 }
 
 .courses-section h1{
@@ -50,11 +55,26 @@
     padding-top: 9vh;
 }
 
-.courses .card{
-    border-top-right-radius: 50px;
-    border-top-left-radius: 50px;
-    border-bottom-right-radius: 50px;
-    border-bottom-left-radius: 50px;
+.courses .card-course{
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    margin-left: 5vw;
+    width: 15rem;
+}
+
+.courses .card .btn{
+    width: 100%;
+}
+
+.card .list-group-item{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.card li{
+    border: 0;
 }
 
 /*
@@ -66,13 +86,10 @@ y 0
 */
 
 .courses-section img{
-    border-top-right-radius: 50px;
-    border-top-left-radius: 50px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
 }
 
-.courses-section .btn-secondary{
-    width: 100%;
-}
 
 .courses-section p{
     font-family: 'Raleway', sans-serif;
@@ -81,4 +98,8 @@ y 0
     text-align: justify;
     font-weight: 300;
     padding-top: 3vh;
+}
+
+.card{
+    height: fit-content;
 }
