@@ -1,0 +1,77 @@
+.courses-section{
+    background-color: #b6cadd;
+    /*height: 100vh;*/
+}
+
+.courses-section h1{
+    font-family: 'Raleway', sans-serif;
+    font-size: 3vw;
+    color: #2b2b2b;
+    text-align: center;
+    font-weight: 300;
+    padding-top: 9vh;
+}
+
+@media (max-width: 575px) {
+    .card-course{
+        width: 80vw !important;
+        margin: 0 !important;
+    }
+
+    .courses-section p{
+        font-size: 1rem !important;
+    }
+    
+    .courses-section h1{
+        font-size: 2rem !important;
+    }
+}
+
+@media (min-width: 576px){
+
+    /* Desktop Version*/
+
+    .card-course{
+        margin-left: 5vw;
+        width: 15rem;
+    }
+
+}
+
+.card-course{
+    /*COMMONS*/
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+
+
+.courses .card .btn{
+    width: 100%;
+}
+
+.card .list-group-item{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.card li{
+    border: 0;
+}
+
+.courses-section img{
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+
+.courses-section p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.3vw;
+    color: #2b2b2b;
+    text-align: justify;
+    font-weight: 300;
+    padding-top: 3vh;
+}
