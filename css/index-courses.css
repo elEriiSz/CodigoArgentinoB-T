@@ -16,6 +16,7 @@
     .card-course{
         width: 80vw !important;
         margin: 0 !important;
+        margin-bottom: 5vh !important;
     }
 
     .courses-section p{
