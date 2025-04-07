@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+.nav-icon{
+    width: 6vw;
+    min-width: 70px;
+}
+
+.know-us-section{
+    background-color: #b6cadd;
+    /*height: 100vh;*/
+}
+
+.know-us-section .card{
+    width: 15rem;
+}
+
+.know-us-section h1{
+    font-family: 'Raleway', sans-serif;
+    font-size: 3vw;
+    color: #2b2b2b;
+    text-align: center;
+    font-weight: 300;
+    padding-top: 9vh;
+}
+
+.know-us-section h4{
+    font-family: 'Raleway', sans-serif;
+    font-size: 2vw;
+    color: #2b2b2b;
+    text-align: center;
+    font-weight: 300;
+    padding-top: 3vh;
+}
+
+.know-us-section p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.3vw;
+    color: #2b2b2b;
+    text-align: justify;
+    font-weight: 300;
+    padding-top: 3vh;
+}
+
+.courses-section{
+    background-color: #b6cadd;
+    /*height: 100vh;*/
+}
+
+.courses-section h1{
+    font-family: 'Raleway', sans-serif;
+    font-size: 3vw;
+    color: #2b2b2b;
+    text-align: center;
+    font-weight: 300;
+    padding-top: 9vh;
+}
+
+.courses .card-course{
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    margin-left: 5vw;
+    width: 15rem;
+}
+
+.courses .card .btn{
+    width: 100%;
+}
+
+.card .list-group-item{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.card li{
+    border: 0;
+}
+
+/*
+868
+696
+cursos medidas pics
+x 78
+y 0
+*/
+
+.courses-section img{
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+
+.courses-section p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.3vw;
+    color: #2b2b2b;
+    text-align: justify;
+    font-weight: 300;
+    padding-top: 3vh;
+}
+
+.card{
+    height: fit-content;
+}
+
+.item-team{
+    background-color: white;
+    height: 60vh;
+    width: 80vw;
+    border-radius: 15px;
+    margin: 0 auto;
+}
+
+.item-team .col-sm-5:first-child{
+    border-radius: 15px;
+}
+
+.item-team .col{
+    border-radius: 15px;
+}
+
+.item-team img{
+    width: 23vw;
+    border-radius: 100%;
+    min-width: 200px;
+}
