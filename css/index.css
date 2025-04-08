@@ -30,7 +30,7 @@ h1{
 }
 
 @media (max-width: 575px) {
-    .know-us-section h1{
+    h1{
         font-size: 2rem !important;
     }
     .know-us-section p{
