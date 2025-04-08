@@ -5,6 +5,7 @@
     min-width: 70px;
 }
 
+
 .know-us-section{
     background-color: #b6cadd;
     /*height: 100vh;*/
@@ -35,6 +36,11 @@
     .know-us-section p{
         font-size: 1rem !important;
     }
+}
+
+.float-ig{
+    width: 2vw;
+    border-radius: 100%;
 }
 
 .know-us-section p{
