@@ -67,6 +67,10 @@
     border-top-left-radius: 15px;
 }
 
+.btn-age{
+    margin-bottom: 0 !important;
+}
+
 
 .courses-section p{
     font-family: 'Raleway', sans-serif;
