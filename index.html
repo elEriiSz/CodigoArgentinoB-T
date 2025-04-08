@@ -12,7 +12,7 @@
 
     <nav class="navbar navbar-expand-lg bg-dark fixed-top" data-bs-theme="dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img class="nav-icon" src="./assets/icons/white-icon.png"></a>
+          <a class="navbar-brand"><img class="nav-icon" src="./assets/icons/white-icon.png"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -22,19 +22,19 @@
                 <a class="nav-link active" aria-current="page" href="#">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Conocenos</a>
+                <a class="nav-link" href="#know-us">Conocenos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Cursos</a>
+                <a class="nav-link" href="#courses">Cursos</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Clase de prueba</a>
               </li>
-              <li class="nav-item">
+              <!--<li class="nav-item">
                 <a class="nav-link" href="#">Contactanos</a>
-              </li>
+              </li>-->
               <li class="nav-item">
-                <a class="nav-link" href="#">Preguntas frecuentes</a>
+                <a class="nav-link" href="#faq">Preguntas frecuentes</a>
               </li>
             </ul>
           </div>
@@ -76,7 +76,7 @@
         </button>
       </div>
     
-      <div class="container-fluid know-us-section">
+      <div id="know-us" class="container-fluid know-us-section">
         <h1>Nuestro Equipo</h1>
         <!--Carrousel starts-->
         <div id="carouselExample" class="carousel slide">
@@ -127,7 +127,7 @@
         <!--Carrousel ends-->
       </div>
 
-      <div class="container-fluid courses-section">
+      <div id="courses" class="container-fluid courses-section">
         <h1>Cursos</h1>
         <div class="courses d-flex flex-wrap justify-content-center">
             <div class="card card-course">
@@ -143,7 +143,7 @@
                 <img src="./assets/icons/courses/icon-python.png" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">Python</h5>
-                  <p class="d-inline-flex gap-1">
+                  <p class="btn-age" class="d-inline-flex gap-1">
                     <a class="btn btn-secondary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
                       Edades
                     </a>
@@ -176,7 +176,7 @@
       <!-- Faqs -->
 
 
-      <section class="faqs container-fluid">
+      <section id="faq" class="faqs container-fluid">
         <h1>Preguntas frecuentes</h1>
 
         <div class="accordion" id="accordionExample">

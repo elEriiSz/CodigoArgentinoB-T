@@ -6,5 +6,5 @@ btnIg.addEventListener("click", function () {
 });
 
 btnWp.addEventListener("click", function () {
-  window.open("https://www.wa.me/+5493512445290", "_blank");
+  window.open("wa.me/+5493512445290", "_blank");
 });
