@@ -6,5 +6,5 @@ btnIg.addEventListener("click", function () {
 });
 
 btnWp.addEventListener("click", function () {
-  window.open("wa.me/+5493512445290", "_blank");
+  window.open("https://api.whatsapp.com/send/?phone=%2B5493512445290&text&type=phone_number&app_absent=0", "_blank");
 });
