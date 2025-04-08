@@ -5,12 +5,13 @@
     min-width: 70px;
 }
 
+
 .know-us-section{
     background-color: #b6cadd;
     /*height: 100vh;*/
 }
 
-.know-us-section h1{
+h1{
     font-family: 'Raleway', sans-serif;
     font-size: 3vw;
     color: #2b2b2b;
@@ -35,6 +36,29 @@
     .know-us-section p{
         font-size: 1rem !important;
     }
+}
+
+.float-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.float-icon img {
+    width: 60px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.icon-ig{
+    margin-bottom: 10px;
+}
+
+.float-icon img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
 }
 
 .know-us-section p{
@@ -71,4 +95,9 @@
     width: 23vw;
     border-radius: 100%;
     min-width: 200px;
+}
+
+.faqs{
+    background-color: #b6cadd;
+    padding-bottom: 1vh;
 }
