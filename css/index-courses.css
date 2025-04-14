@@ -34,7 +34,12 @@
 
     .card-course{
         margin-left: 5vw;
-        width: 15rem;
+        width: 20rem;  /* 15 rem*/
+    }
+
+    .card-course:hover {
+        background-color: rgba(218, 231, 247, 0.884); /* Blanco semitransparente */
+        cursor: pointer; /* Cambia el cursor a "mano" */
     }
 
 }
@@ -45,8 +50,9 @@
     border-top-left-radius: 15px;
     border-bottom-right-radius: 15px;
     border-bottom-left-radius: 15px;
+    transition: background-color 0.3s ease; /* Transición suave */
+    margin-bottom: 10vh;
 }
-
 
 
 .courses .card .btn{
@@ -74,9 +80,23 @@
 
 .courses-section p{
     font-family: 'Raleway', sans-serif;
-    font-size: 1.3vw;
+    font-size: 1.1vw;  /* 1.3vw */
     color: #2b2b2b;
     text-align: start;
     font-weight: 300;
     padding-top: 3vh;
+}
+
+/* Cambiar el color de los botones primarios a violeta */
+.btn-more {
+    background-color: #6f42c1 !important; /* Violeta */
+    border-color: #6f42c1 !important; /* Violeta */
+    color: antiquewhite !important; /* Color del texto */
+}
+
+/* Cambiar el color de los botones primarios al pasar el cursor */
+.btn-more:hover {
+    background-color: #5a379e !important; /* Violeta más oscuro */
+    border-color: #5a379e !important; /* Violeta más oscuro */
+    color: antiquewhite !important; /* Color del texto */
 }
