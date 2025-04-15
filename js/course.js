@@ -5,6 +5,10 @@ var courseImg = document.querySelector("#course-pic");
 var urlParam = new URLSearchParams(window.location.search);
 var courseParam = urlParam.get('course');
 var course = courses.find(course => course.url.includes(courseParam));
+var btnContact = document.querySelector('#btn-contact');
+btnContact.addEventListener('click', function() {
+    window.location.href = course.contactForm;
+});
 
 courseImg.src = course.icon;
 
