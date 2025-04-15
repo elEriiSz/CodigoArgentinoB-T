@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
-.nav-icon{
+/* .nav-icon{
     width: 6vw;
     min-width: 70px;
-}
+} */
 
 
 .know-us-section{
@@ -16,7 +16,7 @@ h1{
     font-size: 3vw;
     color: #2b2b2b;
     text-align: center;
-    font-weight: 300;
+    font-weight: 600;  /* 300 */
     padding-top: 9vh;
 }
 
@@ -38,7 +38,7 @@ h1{
     }
 }
 
-.float-container {
+/* .float-container {
     position: fixed;
     bottom: 20px;
     right: 20px;
@@ -59,7 +59,7 @@ h1{
 .float-icon img:hover {
     transform: scale(1.1);
     cursor: pointer;
-}
+} */
 
 .know-us-section p{
     text-align: center;
@@ -103,4 +103,8 @@ p, button{
 .faqs{
     background-color: #b6cadd;
     padding-bottom: 1vh;
+}
+
+.faqs button{
+    font-weight: 600;
 }
