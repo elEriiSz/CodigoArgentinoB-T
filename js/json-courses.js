@@ -28,7 +28,7 @@ var courses = [
         }
     },
     {
-        name: "PYTHON ADOLESCENTES",
+        name: "PYTHON",
         icon: "./assets/icons/courses/icon-python.png",
         url:"./courses.html?course=py-teens",
         description: {
@@ -65,6 +65,40 @@ var courses = [
         name: "JAVA",
         icon: "./assets/icons/courses/icon-java.png",
         url:"./courses.html?course=prog-java",
+        description: {
+            p1: "Java es un lenguaje de programación de propósito general, concurrente, orientado a objetos que fue diseñado específicamente para tener tan pocas dependencias de implementación como fuera posible."
+        },
+        courseRequirements: {
+            "Edad requerida": "+17 años",
+            "Duracion del curso": "8 clases",
+            "Conocimientos previos": "no es necesario"
+        },
+        technicalRequirements: {
+            req1: "Buena conexión a internet",
+            req2: "Computadora con Windows 10 o superior / Linux / MacOS",
+        }
+    },
+    {
+        name: "R",
+        icon: "./assets/icons/courses/icon-r.png",
+        url:"./courses.html?course=prog-r",
+        description: {
+            p1: "Java es un lenguaje de programación de propósito general, concurrente, orientado a objetos que fue diseñado específicamente para tener tan pocas dependencias de implementación como fuera posible."
+        },
+        courseRequirements: {
+            "Edad requerida": "+17 años",
+            "Duracion del curso": "8 clases",
+            "Conocimientos previos": "no es necesario"
+        },
+        technicalRequirements: {
+            req1: "Buena conexión a internet",
+            req2: "Computadora con Windows 10 o superior / Linux / MacOS",
+        }
+    },
+    {
+        name: "Diseño Web Site",
+        icon: "./assets/icons/courses/icon-wdesign.png",
+        url:"./courses.html?course=web-design",
         description: {
             p1: "Java es un lenguaje de programación de propósito general, concurrente, orientado a objetos que fue diseñado específicamente para tener tan pocas dependencias de implementación como fuera posible."
         },

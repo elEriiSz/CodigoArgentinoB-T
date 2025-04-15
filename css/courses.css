@@ -18,6 +18,12 @@ body{
     border-radius: 15px;
 }
 
+@media (max-width: 600px) {
+    .card-course{
+        width: 100vw;
+    }
+}
+
 .card-text{
     font-size: 1w !important;
 }
