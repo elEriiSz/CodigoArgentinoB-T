@@ -30,6 +30,9 @@ h1{
 }
 
 @media (max-width: 575px) {
+
+    /* MOBILE */
+
     h1{
         font-size: 2rem !important;
     }
@@ -38,28 +41,11 @@ h1{
     }
 }
 
-/* .float-container {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 1000;
+@media (min-width: 574px){
+    .know-us-section p{
+        font-size: 1.5vw !important;
+    }
 }
-
-.float-icon img {
-    width: 60px;
-    border-radius: 50%;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
-}
-
-.icon-ig{
-    margin-bottom: 10px;
-}
-
-.float-icon img:hover {
-    transform: scale(1.1);
-    cursor: pointer;
-} */
 
 .know-us-section p{
     text-align: center;
