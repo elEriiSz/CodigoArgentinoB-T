@@ -7,7 +7,7 @@ var courseParam = urlParam.get('course');
 var course = courses.find(course => course.url.includes(courseParam));
 var btnContact = document.querySelector('#btn-contact');
 btnContact.addEventListener('click', function() {
-    window.location.href = "https://api.whatsapp.com/send/?phone=%2B5493512445290&text&type=phone_number&app_absent=0";
+    window.location.href = "https://api.whatsapp.com/send?phone=+5493512445290&text=Hola!%20Quiero%20m%C3%A1s%20informaci%C3%B3n%20del%20curso%20de%20" + course.name + "%20%F0%9F%98%8A";
 });
 
 courseImg.src = course.icon;
