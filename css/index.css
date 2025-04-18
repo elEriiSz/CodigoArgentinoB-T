@@ -5,7 +5,6 @@
     min-width: 70px;
 } */
 
-
 .know-us-section{
     background-color: #b6cadd;
     /*height: 100vh;*/
@@ -44,6 +43,10 @@ h1{
 @media (min-width: 574px){
     .know-us-section p{
         font-size: 1.5vw !important;
+    }
+
+    #btn-trial{
+        display: none !important;
     }
 }
 
