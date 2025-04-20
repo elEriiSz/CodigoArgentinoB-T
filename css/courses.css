@@ -19,6 +19,9 @@ body{
 }
 
 @media (max-width: 600px) {
+
+    /* MOBILE */
+
     .card-course{
         width: 100vw;
     }

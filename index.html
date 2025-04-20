@@ -29,9 +29,9 @@
               <li class="nav-item">
                 <a class="nav-link" href="#courses">Cursos</a>
               </li>
-              <li class="nav-item">
+              <!-- <li class="nav-item">
                 <a class="nav-link" href="https://api.whatsapp.com/send?phone=+5493512445290&text=Hola!%20Quiero%20coordinar%20una%20clase%20de%20prueba%20%F0%9F%98%8A">Clase de prueba</a>
-              </li>
+              </li> -->
               <!--<li class="nav-item">
                 <a class="nav-link" href="#">Contactanos</a>
               </li>-->
@@ -54,6 +54,7 @@
           <img src="./assets/icons/contact/icon-wp.svg">
         </div>
       </div>
+
       
       <!--Floating items ends-->
 
@@ -129,15 +130,17 @@
         <!--Carrousel ends-->
       </div>
 
-      <div id="courses" class="container-fluid courses-section">
+      <div id="courses" class="container-fluid courses-section d-flex flex-column justify-content-center">
         <h1>Cursos</h1>
-        <div class="courses d-flex flex-wrap justify-content-center">
+        <!-- <div class="courses d-flex flex-wrap justify-content-center"> -->
+        <div class="courses">
             <div class="card card-course">
                 <img src="./assets/icons/courses/icon-scratch.png" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">Programacion para niños</h5>
                   <p class="card-text">Potencia el desarrollo digital de tus niños a traves de diversas plataformas educativas</p>
                   <a href="./courses.html?course=prog-kids" target="_blank" class="btn btn-more">Conoce más</a>
+                  <a target="_blank" class="btn btn-trial">Reservar una clase de prueba</a>
                 </div>
               </div>
     
@@ -160,6 +163,7 @@
                   </div> -->
                   <p id="card-py" class="card-text">Domina los fundamentos de Python y desarrolla habilidades de programación escenciales para el mundo digital</p>
                   <a href="./courses.html?course=prog-python" target="_blank" class="btn btn-more">Conoce más</a>
+                  <a class="btn btn-trial">Reservar una clase de prueba</a>
                 </div>
               </div>
     
@@ -172,7 +176,7 @@
                 </div>
               </div>
 
-              <div class="d-flex flex-wrap justify-content-center">
+              <div class="w-100 d-flex flex-wrap justify-content-center">
 
                 <div class="card card-course">
                   <img src="./assets/icons/courses/icon-r.png" class="card-img-top" alt="...">
@@ -229,7 +233,7 @@
               <!-- More courses ends -->
             </div>
               
-
+            <!-- <button id="btn-trial" type="button" class="btn btn-primary" role="button" aria-expanded="false" aria-controls="collapseExample">Quiero una clase de prueba</button> -->
 
       </div>
 
@@ -289,6 +293,24 @@
 
 
       <!-- Faqs ends-->
+
+      <!--Toast starts-->
+
+      <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="liveToast" class="toast" role="alert" aria-live="assertive" data-bs-autohide="false" aria-atomic="true">
+          <div class="toast-header">
+            <img src="./assets/icons/blue-icon.png" class="rounded me-2" alt="...">
+            <strong class="me-auto">🔥HOT SALE</strong>
+            <small>ahora</small>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+          </div>
+          <div class="toast-body">
+            Aprovecha 15% OFF en nuestros cursos de python
+          </div>
+        </div>
+      </div>
+
+      <!-- Toast ends-->
 
 </body>
 <script src="./js/index.js"></script>
