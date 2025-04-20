@@ -52,11 +52,31 @@
     border-bottom-left-radius: 15px;
     transition: background-color 0.3s ease; /* Transición suave */
     margin-bottom: 10vh;
+    /* new content*/
+    flex: 1 1 20rem; /* Permite que las tarjetas se ajusten proporcionalmente */
+    max-width: 20rem; /* Ancho máximo de las tarjetas */
+    height: auto; /* Ajusta la altura automáticamente */
+    display: flex;
+    flex-direction: column; /* Asegura que el contenido interno esté en columna */
 }
 
+/* new content*/
+.courses {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las tarjetas se ajusten en varias filas */
+    justify-content: center; /* Centra las tarjetas horizontalmente */
+    align-items: stretch; /* Asegura que todas las tarjetas tengan el mismo alto */
+    gap: 2rem; /* Espaciado entre tarjetas */
+}
 
 .courses .card .btn{
     width: 100%;
+    margin-top: auto; /* Empuja el botón hacia abajo */
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column; /* Asegura que el contenido interno esté en columna */
 }
 
 .card .list-group-item{
@@ -91,6 +111,19 @@
 .btn-more {
     background-color: #6f42c1 !important; /* Violeta */
     border-color: #6f42c1 !important; /* Violeta */
+    color: antiquewhite !important; /* Color del texto */
+}
+
+.btn-trial {
+    background-color: #3c91e6 !important; /* Azul */
+    border-color: #3c91e6 !important; /* Azul */
+    color: antiquewhite !important; /* Color del texto */
+    margin-top: 0.5vh !important;
+}
+
+.btn-trial:hover {
+    background-color: #316fb3 !important; /* Azul más oscuro */
+    border-color: #316fb3 !important; /* Azul más oscuro */
     color: antiquewhite !important; /* Color del texto */
 }
 
