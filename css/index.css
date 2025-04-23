@@ -56,7 +56,7 @@ h1{
     padding-top: 3vh;
 }
 
-.carousel-item-1 img{
+.carousel-item-first img{
     height: 75vh;
     object-fit: cover;
     object-position: center 20%;
