@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./css/float-buttons.css">
     <link rel="icon" href="./assets/icons/icon-wp-dark.png" media="(prefers-color-scheme: light)" type="image/png">
     <link rel="icon" href="./assets/icons/icon-wp-white.png" media="(prefers-color-scheme: dark)" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <title>CodAr</title>
 </head>
@@ -35,16 +36,17 @@
               <!-- <li class="nav-item">
                 <a class="nav-link" href="https://api.whatsapp.com/send?phone=+5493512445290&text=Hola!%20Quiero%20coordinar%20una%20clase%20de%20prueba%20%F0%9F%98%8A">Clase de prueba</a>
               </li> -->
-              <!--<li class="nav-item">
-                <a class="nav-link" href="#">Contactanos</a>
-              </li>-->
               <li class="nav-item">
                 <a class="nav-link" href="#faq">Preguntas frecuentes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contactanos</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
+
 
       <!--Floating items-->
 
@@ -68,8 +70,8 @@
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>-->
         </div>
         <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="./assets/img/logo.png" class="d-block w-100" alt="...">
+          <div class="carousel-item active carousel-item-1">
+            <img src="./assets/img/team/team.jpg" class="d-block w-100" alt="...">
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -81,6 +83,26 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
+
+      <!-- Collapse HOT SALE -->
+
+      <div class="d-flex justify-content-center hot-sale-container">
+        <div class="collapse hot-sale-card" id="collapseExample">
+          <div class="card card-body">
+            <div class="toast-header hot-sale-header">
+              <img src="./assets/icons/blue-icon.png" class="me-2" alt="...">
+              <strong class="me-auto">🔥HOT SALE</strong>
+              <a href="https://api.whatsapp.com/send?phone=+5493512445290&text=%F0%9F%94%A5%20Quiero%20aprovechar%20el%2015%25%20off%20en%20los%20cursos%20de%20programaci%C3%B3n." target="_blank" class="btn btn-link">Más info</a>
+            </div>
+            <!-- <div class="toast-body">
+              Aprovecha 15% OFF en nuestros cursos
+            <a href="https://api.whatsapp.com/send?phone=+5493512445290&text=%F0%9F%94%A5%20Quiero%20aprovechar%20el%2015%25%20off%20en%20los%20cursos%20de%20programaci%C3%B3n." target="_blank" class="btn btn-link">Más info</a>
+            </div> -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Collapse HOT SALE ENDS-->
     
       <div id="know-us" class="container-fluid know-us-section">
         <h1>Nuestro Equipo</h1>
@@ -90,7 +112,7 @@
             <div class="carousel-item active">
               <div class="row item-team">
                 <div class="col-sm-5 d-flex justify-content-center align-items-center">
-                  <img src="./assets/img/team/matu.png">
+                  <img src="./assets/img/team/members/matu2.png">
                 </div>
                 <div class="col d-flex flex-column justify-content-center align-items-center">
                   <h2>Matilde Tolosa</h2>
@@ -101,7 +123,7 @@
             <div class="carousel-item">
               <div class="row item-team">
                 <div class="col-sm-5 d-flex justify-content-center align-items-center">
-                  <img src="./assets/img/team/nico.png">
+                  <img src="./assets/img/team/members/nico.png">
                 </div>
                 <div class="col d-flex flex-column justify-content-center align-items-center">
                   <h2>Nicolás Melia</h2>
@@ -112,7 +134,18 @@
             <div class="carousel-item">
               <div class="row item-team">
                 <div class="col-sm-5 d-flex justify-content-center align-items-center">
-                  <img src="./assets/img/team/estefan.png">
+                  <img src="./assets/img/team/members/mar.png">
+                </div>
+                <div class="col d-flex flex-column justify-content-center align-items-center">
+                  <h2>Mar Yosifides</h2>
+                  <p>Profesora</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row item-team">
+                <div class="col-sm-5 d-flex justify-content-center align-items-center">
+                  <img src="./assets/img/team/members/estefano.png">
                 </div>
                 <div class="col d-flex flex-column justify-content-center align-items-center">
                   <h2>Estefano Capoferri</h2>
@@ -133,6 +166,7 @@
         <!--Carrousel ends-->
       </div>
 
+
       <div id="courses" class="container-fluid courses-section d-flex flex-column justify-content-center">
         <h1>Cursos</h1>
         <!-- <div class="courses d-flex flex-wrap justify-content-center"> -->
@@ -143,7 +177,6 @@
                   <h5 class="card-title">Programacion para niños</h5>
                   <p class="card-text">Potencia el desarrollo digital de tus niños a traves de diversas plataformas educativas</p>
                   <a href="./courses.html?course=prog-kids" target="_blank" class="btn btn-more">Conoce más</a>
-                  <a target="_blank" class="btn btn-trial">Reservar una clase de prueba</a>
                 </div>
               </div>
     
@@ -151,22 +184,8 @@
                 <img src="./assets/icons/courses/icon-python.png" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">Python</h5>
-                  <!-- <p class="btn-age" class="d-inline-flex gap-1">
-                    <a class="btn btn-secondary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                      Edades
-                    </a>
-                  </p> -->
-                  <!-- <div class="collapse" id="collapseExample">
-                    <div class="card card-body">
-                      <ul class="list-group list-group-flush">
-                        <li class="list-group-item"><a class="btn btn-secondary">Adolescentes</a></li>
-                        <li class="list-group-item"><a class="btn btn-secondary">Jovenes</a></li>
-                      </ul>
-                    </div>
-                  </div> -->
                   <p id="card-py" class="card-text">Domina los fundamentos de Python y desarrolla habilidades de programación escenciales para el mundo digital</p>
                   <a href="./courses.html?course=prog-python" target="_blank" class="btn btn-more">Conoce más</a>
-                  <a class="btn btn-trial">Reservar una clase de prueba</a>
                 </div>
               </div>
     
@@ -198,46 +217,8 @@
                     <a href="./courses.html?course=web-design" target="_blank" class="btn btn-more">Conoce más</a>
                   </div>
                 </div>
-
               </div>
-
-              <!-- More courses starts -->
-              
-            <!--  <div class="d-flex flex-column">
-              
-              
-              <div class="collapse" id="collapseExample">
-                <div class="courses d-flex flex-wrap justify-content-center">
-                  <div class="card card-course">
-                      <img src="./assets/icons/courses/icon-r.png" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">R</h5>
-                        <p class="card-text">Domina los fundamentos de R y adquiere habilidades clave para el análisis de datos y la ciencia estadística moderna</p>
-                        <a href="./courses.html?course=prog-r" target="_blank" class="btn btn-more">Conoce más</a>
-                      </div>
-                    </div>
-
-                    <div class="card card-course">
-                      <img src="./assets/icons/courses/icon-wdesign.png" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">Diseño Web Site</h5>
-                        <p class="card-text">Aprende diseño web desde cero y desarrolla las habilidades esenciales para crear sitios modernos, funcionales y atractivos</p>
-                        <a href="./courses.html?course=web-design" target="_blank" class="btn btn-more">Conoce más</a>
-                      </div>
-                    </div>
-
-                  </div>
-              </div>
-
-              <button type="button" class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">Ver todos los cursos</button>
-
-              </div> -->
-
-              <!-- More courses ends -->
             </div>
-              
-            <!-- <button id="btn-trial" type="button" class="btn btn-primary" role="button" aria-expanded="false" aria-controls="collapseExample">Quiero una clase de prueba</button> -->
-
       </div>
 
       
@@ -305,7 +286,7 @@
             <img src="./assets/icons/blue-icon.png" class="me-2" alt="...">
             <strong class="me-auto">🔥HOT SALE</strong>
             <small>ahora</small>
-            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            <button type="button" class="btn-close" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-label="Close"></button>
           </div>
           <div class="toast-body">
             Aprovecha 15% OFF en nuestros cursos
@@ -315,6 +296,24 @@
       </div>
 
       <!-- Toast ends-->
+
+      <footer>
+        <div id="contact" class="container-fluid footer d-flex flex-column justify-content-center align-items-center">
+          <div class="col-md-4">
+            <h5>Contacto</h5>
+            <div class="contact-info">
+                <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/5493512445290" target="_blank">+54 9 351 2445-290</a></p>
+                <p><i class="fab fa-instagram"></i> <a href="https://instagram.com/codigo_argentino" target="_blank">codigo_argentino</a></p>
+                <p><i class="fas fa-envelope"></i> <a href="mailto:clases@codigoargentino.cc">clases@codigoargentino.cc</a></p>
+            </div>
+            
+           <!-- <div class="social-icons mt-3">
+                <a href="https://wa.me/5491112345678" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://instagram.com/tucursodeprogramacion" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="mailto:info@cursosdeprogramacion.com"><i class="fas fa-envelope"></i></a>
+            </div> -->
+          </div>
+      </footer>
 
 </body>
 <script src="./js/index.js"></script>
