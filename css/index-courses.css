@@ -114,19 +114,6 @@
     color: antiquewhite !important; /* Color del texto */
 }
 
-.btn-trial {
-    background-color: #3c91e6 !important; /* Azul */
-    border-color: #3c91e6 !important; /* Azul */
-    color: antiquewhite !important; /* Color del texto */
-    margin-top: 0.5vh !important;
-}
-
-.btn-trial:hover {
-    background-color: #316fb3 !important; /* Azul más oscuro */
-    border-color: #316fb3 !important; /* Azul más oscuro */
-    color: antiquewhite !important; /* Color del texto */
-}
-
 /* Cambiar el color de los botones primarios al pasar el cursor */
 .btn-more:hover {
     background-color: #5a379e !important; /* Violeta más oscuro */

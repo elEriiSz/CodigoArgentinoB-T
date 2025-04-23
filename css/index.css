@@ -6,7 +6,7 @@
 } */
 
 .know-us-section{
-    background-color: #b6cadd;
+    background-color: #b6cadd;/*#babab8*/
     /*height: 100vh;*/
 }
 
@@ -56,6 +56,12 @@ h1{
     padding-top: 3vh;
 }
 
+.carousel-item-1 img{
+    height: 75vh;
+    object-fit: cover;
+    object-position: center 20%;
+}
+
 p, button{
     font-family: 'Raleway', sans-serif;
     font-size: 1rem; /*1.3vw*/
@@ -101,4 +107,50 @@ p, button{
 .toast-header img{
     width: 5vw;
     min-width: 70px;
+}
+
+.hot-sale-card{
+    width: 405px;
+    background-color: var(--bs-toast-header-bg);
+}
+
+.hot-sale-container{
+    width: 100%;
+    background-color:#b6cadd; /*#babab8*/
+}
+
+.hot-sale-header{
+    /*border-bottom: 1px solid #8f8f8f;*/
+    color: rgba(33, 37, 41, 0.75);
+}
+
+
+/*footer*/
+
+.footer {
+    background-color: #2c3e50;
+    color: white;
+    padding: 40px 0;
+}
+.footer a {
+    color: #ecf0f1;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.footer a:hover {
+    color: #3498db;
+    transform: translateY(-3px);
+}
+.social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 1.5rem;
+}
+.contact-info i {
+    margin-right: 10px;
+    color: #3498db;
+}
+.footer-bottom {
+    background-color: #1a252f;
+    padding: 15px 0;
 }

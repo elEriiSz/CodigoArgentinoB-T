@@ -1,6 +1,7 @@
 var courses = [
     {
         name: "PROGRAMACION PARA NIÑOS",
+        hasTrial: true,
         icon: "./assets/icons/courses/icon-scratch.png",
         url:"./courses.html?course=prog-kids",
         courseRequirements: {
@@ -28,6 +29,7 @@ var courses = [
     },
     {
         name: "PYTHON",
+        hasTrial: true,
         icon: "./assets/icons/courses/icon-python.png",
         url:"./courses.html?course=py-teens",
         description: {
@@ -45,6 +47,7 @@ var courses = [
     },
     {
         name: "PYTHON JOVENES",
+        hasTrial: true,
         icon: "./assets/icons/courses/icon-python.png",
         url:"./courses.html?course=prog-python",
         description: {
@@ -70,6 +73,7 @@ var courses = [
     },
     {
         name: "JAVA",
+        hasTrial: false,
         icon: "./assets/icons/courses/icon-java.png",
         url:"./courses.html?course=prog-java",
         description: {
@@ -95,6 +99,7 @@ var courses = [
     },
     {
         name: "R",
+        hasTrial: false,
         icon: "./assets/icons/courses/icon-r.png",
         url:"./courses.html?course=prog-r",
         description: {
@@ -120,6 +125,7 @@ var courses = [
     },
     {
         name: "Diseño Web Site",
+        hasTrial: false,
         icon: "./assets/icons/courses/icon-wdesign.png",
         url:"./courses.html?course=web-design",
         description: {

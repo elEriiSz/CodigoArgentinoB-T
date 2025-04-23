@@ -65,3 +65,17 @@ p, button{
 h5{
     margin-top: 1rem;
 }
+
+.btn-trial {
+    background-color: #3c91e6 !important; /* Azul */
+    border-color: #3c91e6 !important; /* Azul */
+    color: antiquewhite !important; /* Color del texto */
+    margin-top: 0.5vh !important;
+    width: 100%;
+}
+
+.btn-trial:hover {
+    background-color: #316fb3 !important; /* Azul más oscuro */
+    border-color: #316fb3 !important; /* Azul más oscuro */
+    color: antiquewhite !important; /* Color del texto */
+}

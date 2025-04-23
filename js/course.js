@@ -16,6 +16,7 @@ courseImg.src = course.icon;
 var ulCourseReq = document.querySelector('#courseReq');
 var ulTechReq = document.querySelector('#techReq');
 var description = document.querySelector('.card-text');
+var btnTrial = document.querySelector('.btn-trial');
 
 for(var req in course.courseRequirements){
     var li = document.createElement('li');
@@ -47,4 +48,12 @@ for (var key in course.description) {
         });
         description.appendChild(ul);
     }
+}
+
+if(course.hasTrial){
+    btnTrial.addEventListener("click", function () {
+        window.open("https://api.whatsapp.com/send?phone=+5493512445290&text=Hola!%20Quiero%20coordinar%20una%20clase%20de%20prueba%20%F0%9F%98%8A", "_blank");
+      });
+}else{
+    btnTrial.style.display = "none";
 }
