@@ -1,5 +1,6 @@
 var btnIg = document.querySelector(".icon-ig");
 var btnWp = document.querySelector(".icon-wp");
+var videoGreeting = document.querySelector("#greeting-vd");
 
 btnIg.addEventListener("click", function () {
   window.open("https://www.instagram.com/codigo_argentino/", "_blank");
@@ -21,3 +22,5 @@ btnClose.addEventListener("click", function () {
   const toast = new bootstrap.Toast(toastElement);
   toast.hide();
 });
+
+videoGreeting.controls = false;

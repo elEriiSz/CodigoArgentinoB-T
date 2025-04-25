@@ -1,0 +1,59 @@
+@keyframes fadeRight {
+    from { opacity: 1; transform: translateX(-50px); }
+    to   { opacity: 1; transform: translateX(0); }
+}
+
+.fade-right-delay {
+    animation: fadeRight 1s ease-out forwards;
+}
+
+/* Retrasos progresivos */
+.delay-1 { animation-delay: 0.2s; }
+.delay-2 { animation-delay: 0.4s; }
+
+video{
+    width: 20vw;
+    height: 80vh;
+    margin-top: 15vh;
+    margin-bottom: 5vh;
+    border-radius: 50px;
+    animation: fadeRight 1s ease-out forwards;
+}
+
+.first-view h1{
+    text-align: left;
+    font-size: 3rem;
+    margin-left: 50px;
+    color: #e4e4e4;
+}
+
+.first-view p{
+    text-align: left;
+    margin-left: 50px;
+    font-size: 1.5rem;
+    color: #e4e4e4;
+}
+
+.first-view button{
+    width: 200px;
+    margin-left: 50px;
+    font-family: "Raleway", sans-serif;
+}
+
+#text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media (min-width: 577px) and (max-width: 1000px) {
+    video {
+        height: 50vh;
+        zoom: 1.5;
+        border-radius: 20%;
+    }
+}
+
+.first-view{
+    background-color: rgb(23, 23, 23);
+}
