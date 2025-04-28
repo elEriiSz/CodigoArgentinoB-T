@@ -18,6 +18,7 @@ video{
     margin-bottom: 5vh;
     border-radius: 50px;
     animation: fadeRight 1s ease-out forwards;
+    zoom: 1;
 }
 
 .first-view h1{
