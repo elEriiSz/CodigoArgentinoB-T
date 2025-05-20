@@ -147,6 +147,32 @@ var courses = [
             req1: "Buena conexión a internet",
             req2: "Computadora con Windows 10 o superior / Linux / MacOS",
         }
+    },
+    {
+        name: "Javascript",
+        hasTrial: false,
+        icon: "./assets/icons/courses/icon-js.png",
+        url:"./courses.html?course=js",
+        description: {
+            p1: "Aprende a desarrollar aplicaciones web interactivas y dinámicas desde cero. En este curso, los estudiantes dominarán JavaScript para crear funcionalidades avanzadas, manipular el DOM y trabajar con frameworks modernos, construyendo proyectos reales y aplicaciones completamente funcionales.",
+            arr: {
+                title: "¿Por qué JavaScript?",
+                items: [
+                    "Lenguaje esencial para desarrollo web y móvil",
+                    "Base de tecnologías como React, Angular y Node.js",
+                    "Uno de los skills más demandados en el mercado tech"
+                ]
+            }
+        },
+        courseRequirements: {
+            "Edad requerida": "+17 años",
+            "Duracion del curso": "8 clases",
+            "Conocimientos previos": "no es necesario"
+        },
+        technicalRequirements: {
+            req1: "Buena conexión a internet",
+            req2: "Computadora con Windows 10 o superior / Linux / MacOS",
+        }
     }
 
 ];

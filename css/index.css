@@ -122,6 +122,12 @@ p, button{
 .hot-sale-header{
     /*border-bottom: 1px solid #8f8f8f;*/
     color: rgba(33, 37, 41, 0.75);
+    display: flex;
+    justify-content: center;
+}
+
+.hot-sale-header strong{
+    margin-right: 0vw !important;
 }
 
 
