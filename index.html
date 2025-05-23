@@ -1,310 +1,374 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="./css/navbar.css">
-    <link rel="stylesheet" href="./css/index-courses.css">
-    <link rel="stylesheet" href="./css/float-buttons.css">
-    <link rel="icon" href="./assets/icons/icon-wp-dark.png" media="(prefers-color-scheme: light)" type="image/png">
-    <link rel="icon" href="./assets/icons/icon-wp-white.png" media="(prefers-color-scheme: dark)" type="image/png">
+    <title>Cod.AR - Cursos de Programación</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-    <title>CodAr</title>
+    <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="./assets/icons/icon-wp-dark.png" class="icon">Cod.Ar
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#courses">Cursos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#team">Equipo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contacto</a>
+                    </li>
+                </ul>
 
-    <nav class="navbar navbar-expand-lg bg-dark fixed-top" data-bs-theme="dark">
-        <div class="container-fluid">
-          <a class="navbar-brand"><img class="nav-icon" src="./assets/icons/white-icon.png"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#know-us">Conocenos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#courses">Cursos</a>
-              </li>
-              <!-- <li class="nav-item">
-                <a class="nav-link" href="https://api.whatsapp.com/send?phone=+5493512445290&text=Hola!%20Quiero%20coordinar%20una%20clase%20de%20prueba%20%F0%9F%98%8A">Clase de prueba</a>
-              </li> -->
-              <li class="nav-item">
-                <a class="nav-link" href="#faq">Preguntas frecuentes</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contact">Contactanos</a>
-              </li>
-            </ul>
-          </div>
+            </div>
         </div>
-      </nav>
+    </nav>
 
-
-      <!--Floating items-->
-
-      <div class="float-container">
-        <div class="float-icon icon-ig">
-          <img src="./assets/icons/contact/icon-ig.png">
-        </div>
-  
-        <div class="float-icon icon-wp">
-          <img src="./assets/icons/contact/icon-wp.svg">
-        </div>
-      </div>
-
-      
-      <!--Floating items ends-->
-      <!--test-->
-
-      <div id="carousel-members" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
-        <div class="carousel-inner">
-          <div class="carousel-item active carousel-item-first">
-            <img src="./assets/img/carousel/carousel.png" class="d-block w-100" alt="...">
-          </div>
-          <!-- <div class="carousel-item carousel-item-first">
-            <img src="./assets/img/team/team.JPG" class="d-block w-100" alt="...">
-          </div> -->
-        </div>
-      </div>
-
-      <!-- Collapse HOT SALE -->
-
-      <div class="d-flex justify-content-center hot-sale-container w-100">
-        <div class="collapse hot-sale-card w-100" id="collapseExample">
-          <div class="card card-body">
-            <div class="toast-header hot-sale-header">
-              <img src="./assets/icons/blue-icon.png" class="me-2" alt="...">
-              <strong class="me-auto">🔥HOT SALE</strong>
-              <a href="https://api.whatsapp.com/send?phone=+5493512445290&text=%F0%9F%94%A5%20Quiero%20aprovechar%20el%2015%25%20off%20en%20los%20cursos%20de%20programaci%C3%B3n." target="_blank" class="btn btn-link">Más info</a>
-            </div>
-            <!-- <div class="toast-body">
-              Aprovecha 15% OFF en nuestros cursos
-            <a href="https://api.whatsapp.com/send?phone=+5493512445290&text=%F0%9F%94%A5%20Quiero%20aprovechar%20el%2015%25%20off%20en%20los%20cursos%20de%20programaci%C3%B3n." target="_blank" class="btn btn-link">Más info</a>
-            </div> -->
-          </div>
-        </div>
-      </div>
-
-      <!-- Collapse HOT SALE ENDS-->
-    
-      <div id="know-us" class="container-fluid know-us-section">
-        <h1>Nuestro Equipo</h1>
-        <!--Carrousel starts-->
-        <div id="carouselExample" class="carousel slide">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="row item-team">
-                <div class="col-sm-5 d-flex justify-content-center align-items-center">
-                  <img src="./assets/img/team/members/matu2.png">
-                </div>
-                <div class="col d-flex flex-column justify-content-center align-items-center">
-                  <h2>Matilde Tolosa</h2>
-                  <p>Fundadora, Directora Ejecutiva, Profesora</p>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="row item-team">
-                <div class="col-sm-5 d-flex justify-content-center align-items-center">
-                  <img src="./assets/img/team/members/nico.png">
-                </div>
-                <div class="col d-flex flex-column justify-content-center align-items-center">
-                  <h2>Nicolás Melia</h2>
-                  <p>Calidad Educativa, Profesor</p>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="row item-team">
-                <div class="col-sm-5 d-flex justify-content-center align-items-center">
-                  <img src="./assets/img/team/members/mar.png">
-                </div>
-                <div class="col d-flex flex-column justify-content-center align-items-center">
-                  <h2>Mar Yosifides</h2>
-                  <p>Profesora</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-        <!--Carrousel ends-->
-      </div>
-
-
-      <div id="courses" class="container-fluid courses-section d-flex flex-column justify-content-center">
-        <h1>Cursos</h1>
-        <!-- <div class="courses d-flex flex-wrap justify-content-center"> -->
-        <div class="courses">
-            <div class="card card-course">
-                <img src="./assets/icons/courses/icon-scratch.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Programacion para niños</h5>
-                  <p class="card-text">Potencia el desarrollo digital de tus niños a traves de diversas plataformas educativas</p>
-                  <a href="./courses.html?course=prog-kids" class="btn btn-more">Conoce más</a>
-                </div>
-              </div>
-    
-              <div class="card card-course">
-                <img src="./assets/icons/courses/icon-python.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Python</h5>
-                  <p id="card-py" class="card-text">Domina los fundamentos de Python y desarrolla habilidades de programación escenciales para el mundo digital</p>
-                  <a href="./courses.html?course=prog-python" class="btn btn-more">Conoce más</a>
-                </div>
-              </div>
-    
-              <div class="card card-course">
-                <img src="./assets/icons/courses/icon-java.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Java</h5>
-                  <p class="card-text">Aprende a utilizar Java para el desarrollo web, aplicaciones de escritorio y mucho más</p>
-                  <a href="./courses.html?course=prog-java" class="btn btn-more">Conoce más</a>
-                </div>
-              </div>
-
-              <div class="w-100 d-flex flex-wrap justify-content-center">
-
-                <div class="card card-course">
-                  <img src="./assets/icons/courses/icon-r.png" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">R</h5>
-                    <p class="card-text">Domina los fundamentos de R y adquiere habilidades clave para el análisis de datos y la ciencia estadística moderna</p>
-                    <a href="./courses.html?course=prog-r" class="btn btn-more">Conoce más</a>
-                  </div>
-                </div>
-
-                <div class="card card-course">
-                  <img src="./assets/icons/courses/icon-wdesign.png" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Diseño Web Site</h5>
-                    <p class="card-text">Aprende diseño web desde cero y desarrolla las habilidades esenciales para crear sitios modernos, funcionales y atractivos</p>
-                    <a href="./courses.html?course=web-design" class="btn btn-more">Conoce más</a>
-                  </div>
-                </div>
-
-                <div class="card card-course">
-                  <img src="./assets/icons/courses/icon-js.png" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">JavaScript</h5>
-                    <p class="card-text">Aprende JavaScript desde cero y domina el lenguaje de programación más utilizado en el desarrollo web.</p>
-                    <a href="./courses.html?course=js" class="btn btn-more">Conoce más</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-      </div>
-
-      
-      <!-- Faqs -->
-
-
-      <section id="faq" class="faqs container-fluid">
-        <h1>Preguntas frecuentes</h1>
-
-        <div class="accordion" id="accordionExample">
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingOne">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                ¿Cuanto duran nuestros cursos?
-              </button>
-            </h2>
-            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <p>En nuestra academia, entendemos que tu tiempo es valioso. Por eso, hemos diseñado nuestros cursos para que sean intensivos y enfocados, permitiéndote adquirir los conocimientos y habilidades esenciales para tu futuro en el mundo de la programación en el menor tiempo posible.</p>
-                <p>Nuestros cursos tienen una duración que varía dependiendo del tema y nivel, pero en general, se caracterizan por ser más cortos que los programas tradicionales. Nos enfocamos en brindarte la información más relevante y práctica, sin rodeos, para que puedas comenzar a aplicar lo aprendido de inmediato.</p>
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingTwo">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                ¿Se cuenta con un certificado al finalizar el curso?
-              </button>
-            </h2>
-            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <p>¡Sí! En nuestra academia, valoramos tu esfuerzo y dedicación. Al finalizar cada uno de nuestros cursos de programación, recibirás un certificado digital que acredita tu participación y los conocimientos adquiridos.</p>
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingThree">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                ¿Consultas con un mentor?
-              </button>
-            </h2>
-            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <p>
-                  ¡Por supuesto! Nuestro equipo busca que todos los alumnos tengan la oportunidad de aprender y comprender los conceptos al máximo. Sabemos que a veces surgen dudas fuera del horario de clases, y por eso, ofrecemos la posibilidad de realizar consultas con nuestros mentores en horarios flexibles.
-                </p>
-                <p>
-                  Contamos con un equipo de mentores altamente capacitados y con experiencia en el mundo de la programación, que estarán encantados de ayudarte a resolver tus dudas y guiarte en tu camino de aprendizaje. Podrás contactarlos a través de diferentes canales, como correo electrónico o chat y ellos te responderán lo antes posible.
-                </p>
-              </div>
-            </div>
-          </div>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1 class="display-5 fw-bold mb-4">Domina las tecnologías del futuro</h1>
+            <p class="lead mb-5">Aprende programación con nuestros cursos y domina habilidades reales con proyectos prácticos.</p>
+            <a href="#courses" class="btn btn-outline-light btn-lg">Explorar Cursos</a>
         </div>
     </section>
 
-
-
-      <!-- Faqs ends-->
-
-      <!--Toast starts-->
-
-      <div class="toast-container position-fixed bottom-0 end-0 p-3">
-        <div id="liveToast" class="toast" role="alert" aria-live="assertive" data-bs-autohide="false" aria-atomic="true">
-          <div class="toast-header">
-            <img src="./assets/icons/blue-icon.png" class="me-2" alt="...">
-            <strong class="me-auto">🔥HOT SALE</strong>
-            <small>ahora</small>
-            <button type="button" class="btn-close" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-label="Close"></button>
-          </div>
-          <div class="toast-body">
-            Aprovecha 15% OFF en nuestros cursos
-            <a href="https://api.whatsapp.com/send?phone=+5493512445290&text=%F0%9F%94%A5%20Quiero%20aprovechar%20el%2015%25%20off%20en%20los%20cursos%20de%20programaci%C3%B3n." target="_blank" class="btn btn-link">Más info</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Toast ends-->
-
-      <footer>
-        <div id="contact" class="container-fluid footer d-flex flex-column justify-content-center align-items-center">
-          <div class="col-md-4">
-            <h5>Contacto</h5>
-            <div class="contact-info">
-                <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/5493512445290" target="_blank">+54 9 351 2445-290</a></p>
-                <p><i class="fab fa-instagram"></i> <a href="https://instagram.com/codigo_argentino" target="_blank">codigo_argentino</a></p>
-                <p><i class="fas fa-envelope"></i> <a href="mailto:clases@codigoargentino.cc">clases@codigoargentino.cc</a></p>
+    <!-- Courses Section -->
+    <section id="courses" class="py-5">
+        <div class="container">
+            <div class="section-title">
+                <h2>Nuestros Cursos</h2>
             </div>
-            
-           <!-- <div class="social-icons mt-3">
-                <a href="https://wa.me/5491112345678" target="_blank"><i class="fab fa-whatsapp"></i></a>
-                <a href="https://instagram.com/tucursodeprogramacion" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="mailto:info@cursosdeprogramacion.com"><i class="fas fa-envelope"></i></a>
-            </div> -->
-          </div>
-      </footer>
+            <div class="row g-4">
+                <!-- Curso de Python -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="course-card">
+                        <div class="course-img">
+                            <img src="https://images.unsplash.com/photo-1526379095098-d400fd0bf935?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80" alt="Python Programming">
+                        </div>
+                        <div class="course-content">
+                            <h3>Python</h3>
+                            <p>Aprende los fundamentos de Python, desde sintaxis básica hasta estructuras de datos y programación orientada a objetos.</p>
+                            <div class="course-meta">
+                                <span class="course-level beginner">Principiante</span>
+                                <a href="./courses.html?curso=python" class="btn btn-codar">Ver Detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
+                <!-- Curso de Java -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="course-card">
+                        <div class="course-img">
+                            <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1364&q=80" alt="Java Programming">
+                        </div>
+                        <div class="course-content">
+                            <h3>Java</h3>
+                            <p>Aprende a utilizar Java para el desarrollo web, aplicaciones de escritorio y mucho más.</p>
+                            <div class="course-meta">
+                                <span class="course-level advanced">Avanzado</span>
+                                <a href="./courses.html?curso=java" class="btn btn-codar">Ver Detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Curso de JavaScript -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="course-card">
+                        <div class="course-img">
+                            <img src="https://images.unsplash.com/photo-1579468118864-1b9ea3c0db4a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="JavaScript Programming">
+                        </div>
+                        <div class="course-content">
+                            <h3>JavaScript</h3>
+                            <p>Aprende JavaScript desde cero y domina el lenguaje de programación más utilizado en el desarrollo web.</p>
+                            <div class="course-meta">
+                                <span class="course-level intermediate">Intermedio</span>
+                                <a href="./courses.html?curso=javascript" class="btn btn-codar">Ver Detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Curso de Diseño Web -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="course-card">
+                        <div class="course-img">
+                            <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1364&q=80" alt="Web Design">
+                        </div>
+                        <div class="course-content">
+                            <h3>Web Design</h3>
+                            <p>Domina HTML, CSS, Flexbox, Grid y diseño responsivo para crear sitios web impresionantes.</p>
+                            <div class="course-meta">
+                                <span class="course-level beginner">Principiante</span>
+                                <a href="./courses.html?curso=diseno-web" class="btn btn-codar">Ver Detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Curso de R -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="course-card">
+                        <div class="course-img">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="R Programming">
+                        </div>
+                        <div class="course-content">
+                            <h3>Análisis de Datos con R</h3>
+                            <p>Domina los fundamentos de R y adquiere habilidades clave para el análisis de datos y la ciencia estadística moderna.</p>
+                            <div class="course-meta">
+                                <span class="course-level intermediate">Intermedio</span>
+                                <a href="./courses.html?curso=r" class="btn btn-codar">Ver Detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Curso de PHP -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="course-card">
+                        <div class="course-img">
+                            <img src="https://images.unsplash.com/photo-1603354350317-6f7aaa5911c5?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Children Programming">
+                        </div>
+                        <div class="course-content">
+                            <h3>Programación para Niños</h3>
+                            <p>Potencia el desarrollo digital de tus niños a traves de diversas plataformas educativas.</p>
+                            <div class="course-meta">
+                                <span class="course-level beginner">Principiante</span>
+                                <a href="curso-php.html" class="btn btn-codar">Ver Detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h2>Sobre Cod.AR</h2>
+                    <p>Código Argentino está formado por profesores y estudiantes de programación que ofrecen una propuesta única y divertida, donde buscamos que tanto niños, adolescentes y jóvenes puedan desarrollar habilidades computacionales y crear herramientas esenciales para su futuro.</p>
+                    <p>Sabemos que la tecnología se encuentra en todas partes y no podemos quedarnos atrás en un mundo que crece constantemente, aportando nuevos desafíos en el día a día. Y es aquí donde cumple un papel fundamental la programación que nos ofrece oportunidades de crecimiento tanto 
+                        a nivel personal como profesional. El equipo de Código Argentino está comprometido a guiarte y formarte en cada clase de una manera personalizada, ofreciendo cursos de una reducida cantidad de alumnos para atender cada una de las dudas que surgen a la hora de resolver problemas y crear tus propios proyectos.</p>
+                    <!-- <p>Con más de 50,000 estudiantes graduados y una comunidad activa de desarrolladores, hemos ayudado a transformar carreras y vidas a través de la educación tecnológica.</p> -->
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-img">
+                        <img src="./assets/img/team/team.JPG" alt="Equipo de Cod.AR" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="team py-5">
+        <div class="container">
+            <div class="section-title">
+                <h2>Conoce a Nuestro Equipo</h2>
+            </div>
+            <div class="row justify-content-center">
+                <!-- Miembro 1 -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="team-member">
+                        <div class="member-photo">
+                            <img src="./assets/img/team/members/matu2.png" alt="Carlos Martínez" class="img-fluid">
+                        </div>
+                        <div class="member-info">
+                            <h3>Matilde Tolosa</h3>
+                            <p class="position">Fundadora, Directora Ejecutiva</p>
+                            <p class="bio">Estudiante de Ingeniería Quimica en la Universidad Nacional de Córdoba.</p>
+                            <div class="member-social">
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Miembro 2 -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="team-member">
+                        <div class="member-photo">
+                            <img src="./assets/img/team/members/nico.png" alt="Matilde" class="img-fluid">
+                        </div>
+                        <div class="member-info">
+                            <h3>Nicolás Melia</h3>
+                            <p class="position">Profesor</p>
+                            <p class="bio">Estudiante de Ingeniería en Computación en la Universidad Nacional de Córdoba.</p>
+                            <div class="member-social">
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Miembro 3 -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="team-member">
+                        <div class="member-photo">
+                            <img src="./assets/img/team/members/mar.png" alt="Diego Ramírez" class="img-fluid">
+                        </div>
+                        <div class="member-info">
+                            <h3>Mar Yosifides</h3>
+                            <p class="position">Profesora</p>
+                            <p class="bio">Estudiante de Ingeniería en Sistemas en la Universidad Tecnologica Nacional.</p>
+                            <div class="member-social">
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Miembro 4 -->
+                <!-- <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="team-member">
+                        <div class="member-photo">
+                            <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="María Fernández" class="img-fluid">
+                        </div>
+                        <div class="member-info">
+                            <h3>María Fernández</h3>
+                            <p class="position">Diseñadora UX/UI</p>
+                            <p class="bio">Experta en diseño de interfaces y experiencia de usuario. Combina estética y funcionalidad en cada proyecto.</p>
+                            <div class="member-social">
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-dribbble"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <!-- <section id="features" class="features py-5">
+        <div class="container">
+            <div class="section-title">
+                <h2>¿Por qué elegirnos?</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3>Aprendizaje Práctico</h3>
+                        <p>Nuestros cursos se centran en proyectos reales que puedes agregar a tu portafolio desde el primer día.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <h3>Instructores Expertos</h3>
+                        <p>Aprende de desarrolladores profesionales con años de experiencia en la industria tecnológica.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-infinity"></i>
+                        </div>
+                        <h3>Acceso de por vida</h3>
+                        <p>Una vez que compras un curso, tienes acceso ilimitado a las actualizaciones y nuevo contenido.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2 class="display-5 fw-bold mb-4">¿Listo para comenzar tu viaje en programación?</h2>
+            <p class="lead mb-5">Unite a los estudiantes que ya están transformando sus vidas con nuestros cursos.</p>
+            <a href="#" class="btn btn-codar btn-lg">Contactate</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-links">
+                        <h3>Cod.Ar</h3>
+                        <p>Transformando vidas a través de la educación.</p>
+                        <div class="social-links mt-3">
+                            <!-- <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a> -->
+                            <a href="https://www.instagram.com/codigo_argentino/"><i class="fab fa-instagram"></i></a>
+                            <a href="https://api.whatsapp.com/send/?phone=%2B5493512445290&text&type=phone_number&app_absent=0"><i class="fa-solid fa-phone"></i></a>
+                            <!-- <a href="#"><i class="fab fa-youtube"></i></a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-links">
+                        <h3>Cursos</h3>
+                        <ul>
+                            <li><a href="#">Python</a></li>
+                            <li><a href="#">Java</a></li>
+                            <li><a href="#">JavaScript</a></li>
+                            <li><a href="#">Web Design</a></li>
+                            <li><a href="#">R</a></li>
+                            <li><a href="#">Programación para Niños</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-links">
+                        <h3>Compañía</h3>
+                        <ul>
+                            <li><a href="#about">Sobre Nosotros</a></li>
+                            <li><a href="#team">Nuestro Equipo</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-links">
+                        <h3>Contacto</h3>
+                        <!-- <p><i class="fas fa-map-marker-alt me-2"></i> Av. Programación 123, Buenos Aires</p> -->
+                        <p><i class="fas fa-phone me-2"></i> +54 351 2445-290</p>
+                        <p><i class="fas fa-envelope me-2"></i> clases@codigoargentino.cc</p>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="copyright mt-5">
+                <p class="mb-0">&copy; 2023 Cod.AR. Todos los derechos reservados.</p>
+            </div> -->
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-<script src="./js/index.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
 </html>

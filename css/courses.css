@@ -1,81 +1,138 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
-
-body{
-    background-color: #b6cadd;
-    font-family: 'Raleway', sans-serif;
+:root {
+    --primary: #003459;
+    --secondary: #007E47;
+    --dark: #00171F;
+    --light: #FFFFFF;
+    --accent: #007E47;
+}
+        
+body {
+    background-color: var(--light);
+    color: var(--dark);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
 }
 
-.card-container{
-    display: flex; /* Activa Flexbox */
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
-    height: 100vh; /* Asegura que el contenedor ocupe toda la altura de la ventana */
-    padding-top: 25vh;  /* 30vh */
+/* Navbar */
+.navbar {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.card-course{
-    width: 100vw;  /* 70vw */
-    border-radius: 15px;
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
 }
 
-@media (max-width: 600px) {
-
-    /* MOBILE */
-
-    .card-course{
-        width: 100vw;
-    }
+.navbar-brand i {
+    color: var(--secondary);
 }
 
-.card-text{
-    font-size: 1w !important;
+/* Hero Section */
+.course-hero {
+    padding: 100px 0 60px;
+    background: linear-gradient(rgba(0, 52, 89, 0.9), rgba(0, 52, 89, 0.9));
+    color: white;
 }
 
-.card-course img{
-    width: 100%;
-    height: 50vh;  /* 40v4 */
-    object-fit: cover;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    top: -10%;
-    left: -10%;
+/* Buttons */
+.btn-codar {
+    background-color: var(--secondary);
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: all 0.3s ease;
 }
 
-.card-course button{
-    width: 100%;
+.btn-codar:hover {
+    background-color: #006638;
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
-.btn-more {
-    background-color: #6f42c1 !important; /* Violeta */
-    border-color: #6f42c1 !important; /* Violeta */
-    color: antiquewhite !important; /* Color del texto */
+/* Course Level Badge */
+.course-level {
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
-.btn-more:hover {
-    background-color: #5a379e !important; /* Violeta más oscuro */
-    border-color: #5a379e !important; /* Violeta más oscuro */
-    color: antiquewhite !important; /* Color del texto */
+.beginner {
+    background-color: rgba(0, 126, 71, 0.1);
+    color: var(--secondary);
 }
 
-p, button{
-    font-size: 1rem; /*1.3vw*/
-    color: #2b2b2b;
+.intermediate {
+    background-color: rgba(0, 52, 89, 0.1);
+    color: var(--primary);
 }
 
-h5{
-    margin-top: 1rem;
+.advanced {
+    background-color: rgba(0, 23, 31, 0.1);
+    color: var(--dark);
 }
 
-.btn-trial {
-    background-color: #3c91e6 !important; /* Azul */
-    border-color: #3c91e6 !important; /* Azul */
-    color: antiquewhite !important; /* Color del texto */
-    margin-top: 0.5vh !important;
-    width: 100%;
+/* Course Content */
+.course-content-section {
+    padding: 60px 0;
 }
 
-.btn-trial:hover {
-    background-color: #316fb3 !important; /* Azul más oscuro */
-    border-color: #316fb3 !important; /* Azul más oscuro */
-    color: antiquewhite !important; /* Color del texto */
+.course-features {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.feature-icon {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 126, 71, 0.1);
+    color: var(--secondary);
+    border-radius: 50%;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.syllabus-item {
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.syllabus-item:last-child {
+    border-bottom: none;
+}
+
+/* Instructor Section */
+.instructor-card {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.instructor-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Testimonials */
+.testimonial-card {
+    border-left: 4px solid var(--secondary);
+    background-color: #f8f9fa;
+    padding: 25px;
+    border-radius: 0 8px 8px 0;
+}
+
+.icon{
+    width: 45px;
+    height: auto;
 }
