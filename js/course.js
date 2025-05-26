@@ -58,13 +58,85 @@ function loadCourseData() {
     // `).join('');
     
     // Instructor
-    document.getElementById('instructor-name').textContent = course.instructor.name;
-    document.getElementById('instructor-title').textContent = course.instructor.title;
-    document.getElementById('instructor-bio').innerHTML = `<p>${course.instructor.bio}</p>`;
-    document.getElementById('instructor-image').src = course.instructor.image;
-    document.getElementById('instructor-image').alt = course.instructor.name;
-    document.getElementById('instructor-linkedin').href = course.instructor.linkedin;
-    document.getElementById('instructor-github').href = course.instructor.github;
+
+    course.instructors.forEach((instructor) => {
+
+        var card = document.createElement('div');
+        card.classList.add('instructor-card', 'bg-white', 'p-4');
+
+        var rowCard = document.createElement('div');
+        rowCard.classList.add('row', 'align-items-center');
+
+        var colCardImg = document.createElement('div');
+        colCardImg.classList.add('col-md-3', 'text-center');
+
+        var img = document.createElement('img');
+        img.src = instructor.image || "";
+        img.id = 'instructor-image';
+        img.classList.add('img-fluid', 'rounded-circle', 'mb-3', 'mb-md-0');
+        img.style.width = '120px';
+        img.style.height = '120px';
+        img.style.objectFit = 'cover';
+        colCardImg.appendChild(img);
+
+        var colCardInfo = document.createElement('div');
+        colCardInfo.classList.add('col-md-9');
+
+        var name = document.createElement('h3');
+        name.id = 'instructor-name';
+        name.classList.add('fw-bold', 'mb-2');
+        name.textContent = instructor.name;
+        colCardInfo.appendChild(name);
+
+        var title = document.createElement('p');
+        title.id = 'instructor-title';
+        title.classList.add('text-secondary', 'mb-3');
+        title.textContent = instructor.title;
+        colCardInfo.appendChild(title);
+
+        var bio = document.createElement('div');
+        bio.id = 'instructor-bio';
+        bio.classList.add('mb-3');
+        bio.innerHTML = `<p>${instructor.bio}</p>`;
+        colCardInfo.appendChild(bio);
+
+        var socialLinks = document.createElement('div');
+        socialLinks.classList.add('d-flex', 'gap-3');
+
+        var linkedinLink = document.createElement('a');
+        linkedinLink.classList.add('text-secondary');
+        linkedinLink.id = 'instructor-linkedin';
+        linkedinLink.href = instructor.linkedin || '#';
+        var linkedinIcon = document.createElement('i');
+        linkedinIcon.classList.add('fab', 'fa-linkedin', 'fa-lg');
+        linkedinLink.appendChild(linkedinIcon);
+        socialLinks.appendChild(linkedinLink);
+        
+        var githubLink = document.createElement('a');
+        githubLink.classList.add('text-secondary');
+        githubLink.href = instructor.github || '#';
+        githubLink.id = 'instructor-github';
+        var githubIcon = document.createElement('i');
+        githubIcon.classList.add('fab', 'fa-github', 'fa-lg');
+        githubLink.appendChild(githubIcon);
+        socialLinks.appendChild(githubLink);
+        
+        colCardInfo.appendChild(socialLinks);
+        rowCard.appendChild(colCardImg);
+        rowCard.appendChild(colCardInfo);
+        card.appendChild(rowCard);
+
+        document.getElementById('card-container').appendChild(card);
+    
+    });
+
+    // document.getElementById('instructor-name').textContent = course.instructor.name;
+    // document.getElementById('instructor-title').textContent = course.instructor.title;
+    // document.getElementById('instructor-bio').innerHTML = `<p>${course.instructor.bio}</p>`;
+    // document.getElementById('instructor-image').src = course.instructor.image;
+    // document.getElementById('instructor-image').alt = course.instructor.name;
+    // document.getElementById('instructor-linkedin').href = course.instructor.linkedin;
+    // document.getElementById('instructor-github').href = course.instructor.github;
 
     // Requirements
 

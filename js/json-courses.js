@@ -1,3 +1,5 @@
+import { instructors } from "./json-instructors.js";
+
 const courses = {
             'python': {
                 title: 'Python',
@@ -31,14 +33,10 @@ const courses = {
                 //     { title: 'Programación Orientada a Objetos', items: ['Clases y objetos', 'Herencia', 'Polimorfismo'] },
                 //     { title: 'Proyecto Final', items: ['Desarrollo de una aplicación completa'] }
                 // ],
-                instructor: {
-                    name: 'Nicolás Melia',
-                    title: 'Estudiante de Ingeniería en Computación',
-                    bio: '',
-                    image: '../assets/img/team/members/nico.png',
-                    linkedin: 'https://www.linkedin.com/in/nicolas-osvaldo-melia/',
-                    github: 'https://github.com/NicoxMelia'
-                },
+                instructors: [
+                    instructors.nico,
+                    instructors.mar
+                ]
                 // testimonials: [
                 //     '"Este curso transformó mi carrera. Pasé de no saber nada de programación a conseguir mi primer trabajo como desarrollador en 3 meses."',
                 //     '"La metodología de aprendizaje basada en proyectos es excelente. Pude aplicar lo aprendido inmediatamente en mi trabajo."',
@@ -70,14 +68,9 @@ const courses = {
                 //     { title: 'Testing', items: ['JUnit 5', 'Mockito', 'Test Containers'] },
                 //     { title: 'Proyecto Final', items: ['Aplicación empresarial completa'] }
                 // ],
-                instructor: {
-                    name: 'Nicolás Melia',
-                    title: 'Estudiante de Ingeniería en Computación',
-                    bio: '',
-                    image: '../assets/img/team/members/nico.png',
-                    linkedin: 'https://www.linkedin.com/in/nicolas-osvaldo-melia/',
-                    github: 'https://github.com/NicoxMelia'
-                },
+                instructors: [
+                    instructors.nico,
+                ]
                 // testimonials: [
                 //     '"El curso más completo de Java avanzado que he tomado. Los patrones de diseño explicados aquí me ayudaron a mejorar mucho mi código."',
                 //     '"Ana es una instructora excepcional. Explica conceptos complejos de manera muy clara."',
@@ -109,14 +102,9 @@ const courses = {
                     'Computadora con Windows 10 o superior / Linux / MacOS',
                     'Conocimientos previos: no es necesario'
                 ],
-                instructor: {
-                    name: 'Nicolás Melia',
-                    title: 'Estudiante de Ingeniería en Computación',
-                    bio: '',
-                    image: '../assets/img/team/members/nico.png',
-                    linkedin: 'https://www.linkedin.com/in/nicolas-osvaldo-melia/',
-                    github: 'https://github.com/NicoxMelia'
-                },
+                instructors: [
+                    
+                ]
                 // testimonials: [
                 //     '"Finalmente entiendo JavaScript moderno después de años de luchar con conceptos como promesas y async/await."',
                 //     '"Carlos explica los conceptos de manera muy clara. Los ejemplos prácticos son excelentes."',
@@ -147,14 +135,9 @@ const courses = {
                     'Computadora con Windows 10 o superior / Linux / MacOS',
                     'Conocimientos previos: no es necesario'
                 ],
-                instructor: {
-                    name: 'Nicolás Melia',
-                    title: 'Estudiante de Ingeniería en Computación',
-                    bio: '',
-                    image: '../assets/img/team/members/nico.png',
-                    linkedin: 'https://www.linkedin.com/in/nicolas-osvaldo-melia/',
-                    github: 'https://github.com/NicoxMelia'
-                },
+                instructors: [
+                    instructors.nico
+                ]
                 // testimonials: [
                 //     '"Finalmente entiendo JavaScript moderno después de años de luchar con conceptos como promesas y async/await."',
                 //     '"Carlos explica los conceptos de manera muy clara. Los ejemplos prácticos son excelentes."',
@@ -185,14 +168,9 @@ const courses = {
                     'Computadora con Windows 10 o superior / Linux / MacOS',
                     'Conocimientos previos: no es necesario'
                 ],
-                instructor: {
-                    name: 'Nicolás Melia',
-                    title: 'Estudiante de Ingeniería en Computación',
-                    bio: '',
-                    image: '../assets/img/team/members/nico.png',
-                    linkedin: 'https://www.linkedin.com/in/nicolas-osvaldo-melia/',
-                    github: 'https://github.com/NicoxMelia'
-                },
+                instructors: [
+                    instructors.nico
+                ]
                 // testimonials: [
                 //     '"Finalmente entiendo JavaScript moderno después de años de luchar con conceptos como promesas y async/await."',
                 //     '"Carlos explica los conceptos de manera muy clara. Los ejemplos prácticos son excelentes."',
@@ -231,14 +209,9 @@ const courses = {
                     'Computadora con Windows 10 o superior / Linux / MacOS',
                     'Conocimientos previos: no es necesario'
                 ],
-                instructor: {
-                    name: 'Nicolás Melia',
-                    title: 'Estudiante de Ingeniería en Computación',
-                    bio: '',
-                    image: '../assets/img/team/members/nico.png',
-                    linkedin: 'https://www.linkedin.com/in/nicolas-osvaldo-melia/',
-                    github: 'https://github.com/NicoxMelia'
-                },
+                instructors: [
+                    instructors.mar
+                ]
                 // testimonials: [
                 //     '"Finalmente entiendo JavaScript moderno después de años de luchar con conceptos como promesas y async/await."',
                 //     '"Carlos explica los conceptos de manera muy clara. Los ejemplos prácticos son excelentes."',
