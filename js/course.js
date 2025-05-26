@@ -130,6 +130,10 @@ function loadCourseData() {
     
     });
 
+    if (course.instructors.length == 0) {
+        document.getElementById('instructors-title').classList.add('d-none');
+    }
+
     // document.getElementById('instructor-name').textContent = course.instructor.name;
     // document.getElementById('instructor-title').textContent = course.instructor.title;
     // document.getElementById('instructor-bio').innerHTML = `<p>${course.instructor.bio}</p>`;
