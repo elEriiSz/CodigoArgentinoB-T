@@ -492,6 +492,32 @@
             width: 45px;
             height: auto;
         }
+
+        .hot-sale-card{
+            width: 405px;
+            background-color: var(--bs-toast-header-bg);
+        }
+
+        .hot-sale-container{
+            width: 100%;
+            background-color:#b6cadd; /*#babab8*/
+        }
+
+        .hot-sale-header{
+            /*border-bottom: 1px solid #8f8f8f;*/
+            color: rgba(33, 37, 41, 0.75);
+            display: flex;
+            justify-content: center;
+        }
+
+        .hot-sale-header strong{
+            margin-right: 0vw !important;
+        }
+
+        .toast-header img{
+            width: 5vw;
+            min-width: 70px;
+        }
         
         /* Responsive Adjustments */
         @media (max-width: 768px) {
