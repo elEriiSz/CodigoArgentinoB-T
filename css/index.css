@@ -1,9 +1,11 @@
 :root {
             --primary: #003459;
-            --secondary: #007E47;
+            /* --secondary: #007E47; */
+            --secondary: #FCBF34;
             --dark: #00171F;
             --light: #FFFFFF;
-            --accent: #007E47;
+            --beginner: #007E47;
+            --accent: #FCBF34;
         }
         
         body {
@@ -92,7 +94,7 @@
         
         /* Buttons */
         .btn-codar {
-            background-color: var(--secondary);
+            background-color: var(--beginner);
             color: white;
             border: none;
             padding: 10px 25px;
@@ -218,7 +220,7 @@
         
         .beginner {
             background-color: rgba(0, 126, 71, 0.1);
-            color: var(--secondary);
+            color: var(--beginner);
         }
         
         .intermediate {

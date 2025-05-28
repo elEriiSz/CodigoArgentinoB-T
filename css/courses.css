@@ -4,6 +4,7 @@
     --dark: #00171F;
     --light: #FFFFFF;
     --accent: #007E47;
+    --trial: #FCBF34;
 }
         
 body {
@@ -36,7 +37,17 @@ body {
 
 /* Buttons */
 .btn-codar {
-    background-color: var(--secondary);
+    background-color: var(--trial);
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-trial{
+    background-color: var(--trial);
     color: white;
     border: none;
     padding: 10px 25px;
@@ -46,7 +57,14 @@ body {
 }
 
 .btn-codar:hover {
-    background-color: #006638;
+    background-color: var(--trial);
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.btn-trial:hover {
+    background-color: var(--trial);
     color: white;
     transform: translateY(-3px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);

@@ -27,6 +27,10 @@ function loadCourseData() {
     
     // Sobre el curso
     document.getElementById('course-about').innerHTML = course.about;
+
+    // Clase de prueba
+
+    document.querySelector('#btn-trial').href = "https://wa.me/5493512445290?text=Hola!%20Quiero%20solicitar%20una%20clase%20de%20prueba%20para%20el%20curso%20de%20" + course.title;
     
     // Lo que aprenderás
     if(course.learnList != null) {
