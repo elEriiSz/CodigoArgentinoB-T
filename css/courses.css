@@ -37,7 +37,7 @@ body {
 
 /* Buttons */
 .btn-codar {
-    background-color: var(--trial);
+    background-color: var(--primary);
     color: white;
     border: none;
     padding: 10px 25px;
@@ -57,14 +57,14 @@ body {
 }
 
 .btn-codar:hover {
-    background-color: var(--trial);
+    background-color: #FCA725;
     color: white;
     transform: translateY(-3px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 .btn-trial:hover {
-    background-color: var(--trial);
+    background-color: #FCA725;
     color: white;
     transform: translateY(-3px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
