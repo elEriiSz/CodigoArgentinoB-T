@@ -2,10 +2,23 @@
             --primary: #003459;
             /* --secondary: #007E47; */
             --secondary: #FCBF34;
+            --secondary_hover: #FCA725;
+
             --dark: #00171F;
             --light: #FFFFFF;
             --beginner: #007E47;
             --accent: #FCBF34;
+
+            --blanco: #FFFFFF;
+            --celeste: #007EA7;
+            --celeste_oscuro: #006080;
+            --azul: #003459;
+            --azul_oscuro: #00171F;
+            
+            --secondary: var(--celeste);
+            --secondary_hover: var(--celeste_oscuro);
+            --accent: var(--celeste);
+
         }
         
         body {
@@ -121,7 +134,7 @@
         }
         
         .btn-codar:hover {
-            background-color: #FCA725;
+            background-color: var(--secondary_hover);
             color: white;
             transform: translateY(-3px);
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
