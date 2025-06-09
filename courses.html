@@ -1,80 +1,294 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/navbar.css">
-    <link rel="stylesheet" href="./css/float-buttons.css">
-    <link rel="stylesheet" href="./css/courses.css">
-
-    <link rel="icon" href="./assets/icons/icon-wp-dark.png" media="(prefers-color-scheme: light)" type="image/png">
-    <link rel="icon" href="./assets/icons/icon-wp-white.png" media="(prefers-color-scheme: dark)" type="image/png">
-
-    <title>Curso</title>
+    <title>Detalle del Curso - Cod.AR</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/courses.css" class="rel">
 </head>
 <body>
-
-    <nav class="navbar navbar-expand-lg bg-dark fixed-top" data-bs-theme="dark">
-        <div class="container-fluid">
-          <a class="navbar-brand"><img class="nav-icon" src="./assets/icons/white-icon.png"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#know-us">Conocenos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#courses">Cursos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Clase de prueba</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#faq">Preguntas frecuentes</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-
-      <!--Floating items-->
-
-      <div class="float-container">
-        <div class="float-icon icon-ig">
-          <img src="./assets/icons/contact/icon-ig.png">
-        </div>
-  
-        <div class="float-icon icon-wp">
-          <img src="./assets/icons/contact/icon-wpp.png">
-        </div>
-      </div>
-      
-      <!--Floating items ends-->
-
-      <div class="container-fluid card-container d-flex justify-content-center">
-
-        <div class="card card-course">
-            <img id="course-pic" src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-              <div class="card-text"></div>
-              <h5 class="card-title">Detalles del curso</h5>
-              <ul id="courseReq"></ul>
-              <h5>Requisitos</h5>
-              <ul id="techReq"></ul>
-              <button id="btn-contact" type="button" class="btn btn-more">Contactarme con un asesor</button>
-              <a target="_blank" class="btn btn-trial">Reservar una clase de prueba</a>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="./assets/icons/icon-wp-dark.png" class="icon">Cod.Ar
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#courses">Cursos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#about">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#team">Equipo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#contact">Contacto</a>
+                    </li>
+                </ul>
+                <!-- <a href="#" class="btn btn-codar ms-lg-3 mt-3 mt-lg-0">Iniciar Sesión</a> -->
             </div>
-          </div>
+        </div>
+    </nav>
 
-      </div>
+    <!-- Course Hero Section -->
+    <section class="course-hero" id="course-hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <span class="course-level beginner mb-3 d-inline-block">Principiante</span>
+                    <h1 id="course-title" class="display-4 fw-bold mb-4">Python para Principiantes</h1>
+                    <p id="course-description" class="lead mb-4">Aprende los fundamentos de Python, desde sintaxis básica hasta estructuras de datos y programación orientada a objetos.</p>
+                    <div class="d-flex gap-3 mb-4">
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-clock me-2"></i>
+                            <span id="course-duration">8 semanas</span>
+                        </div>
+                        <!-- <div class="d-flex align-items-center">
+                            <i class="fas fa-user-graduate me-2"></i>
+                            <span id="course-students">1200+ estudiantes</span>
+                        </div> -->
+                    </div>
+                    <!-- <a href="https://api.whatsapp.com/send/?phone=%2B5493512445290&text&type=phone_number&app_absent=0" class="btn btn-codar btn-lg">Inscribirse Ahora</a> -->
+                </div>
+                <div class="col-lg-6">
+                    <img id="course-image" src="https://images.unsplash.com/photo-1526379095098-d400fd0bf935?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80" alt="Imagen del curso" class="img-fluid rounded-3 shadow">
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Course Content Section -->
+    <section class="course-content-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h2 class="fw-bold mb-4">Sobre este curso</h2>
+                    <div id="course-about" class="mb-5">
+                        <p>Este curso te introducirá al fascinante mundo de la programación con Python, uno de los lenguajes más populares y versátiles de la actualidad.</p>
+                        <p>Aprenderás desde los conceptos más básicos hasta temas intermedios que te permitirán desarrollar tus propios programas y aplicaciones.</p>
+                    </div>
+                    
+                    <h3 id="title-learnList" class="fw-bold mb-4 hiden">Lo que aprenderás</h3>
+                    <div class="row mb-5">
+                        <div class="col-md-6">
+                            <ul id="course-learn-list" class="list-unstyled">
+                                <!-- <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Fundamentos de programación</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Sintaxis de Python</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Estructuras de datos</li> -->
+                            </ul>
+                        </div>
+                        <!-- <div class="col-md-6">
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Programación orientada a objetos</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Manejo de archivos</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Proyectos prácticos</li>
+                            </ul>
+                        </div> -->
+                    </div>
+                    
+                    <!-- <h3 class="fw-bold mb-4">Temario del curso</h3>
+                    <div class="mb-5">
+                        <div id="course-syllabus" class="accordion">
+                            
+                        </div>
+                    </div> -->
+                    
+                    <h3 class="fw-bold mb-4">Requisitos</h3>
+                    <div id="course-requirements" class="mb-5">
+                        <ul id="requirements-list" class="list-unstyled">
+                            <!-- <li class="mb-2"><i class="fas fa-check-circle text-secondary me-2"></i> No se requiere experiencia previa en programación</li>
+                            <li class="mb-2"><i class="fas fa-check-circle text-secondary me-2"></i> Computadora con acceso a internet</li>
+                            <li class="mb-2"><i class="fas fa-check-circle text-secondary me-2"></i> Ganas de aprender</li> -->
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4">
+                    <div class="course-features sticky-top" style="top: 20px;">
+                        <h4 class="fw-bold mb-4">Este curso incluye:</h4>
+                        <ul id="course-features-list" class="list-unstyled">
+                            <li class="mb-3"><i class="fas fa-video me-2 text-secondary"></i> Clases en vivo</li>
+                            <li class="mb-3"><i class="fas fa-file-alt me-2 text-secondary"></i> Material de estudio</li>
+                            <li class="mb-3"><i class="fas fa-download me-2 text-secondary"></i> Recursos descargables</li>
+                            <!-- <li class="mb-3"><i class="fas fa-infinity me-2 text-secondary"></i> Acceso de por vida</li>
+                            <li class="mb-3"><i class="fas fa-mobile-alt me-2 text-secondary"></i> Acceso en dispositivos móviles</li> -->
+                            <li class="mb-3"><i class="fas fa-trophy me-2 text-secondary"></i> Certificado de finalización</li>
+                        </ul>
+                        <a href="https://api.whatsapp.com/send/?phone=%2B5493512445290&text&type=phone_number&app_absent=0" class="btn btn-codar w-100 mt-3">Inscribirse Ahora</a>
+                        <a id="btn-trial" href="https://api.whatsapp.com/send/?phone=%2B5493512445290&text&type=phone_number&app_absent=0" class="btn btn-trial w-100 mt-3">Quiero una clase de prueba</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instructor Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 id="instructors-title" class="fw-bold text-center mb-5">Conoce al instructor</h2>
+            <div class="row justify-content-center">
+                <div id="card-container" class="col-lg-8">
+                    <!-- <div class="instructor-card bg-white p-4">
+                        <div class="row align-items-center">
+                            <div class="col-md-3 text-center">
+                                <img id="instructor-image" src="./assets/img/team/members/nico.png" alt="Instructor" class="img-fluid rounded-circle mb-3 mb-md-0" style="width: 120px; height: 120px; object-fit: cover;">
+                            </div>
+                            <div class="col-md-9">
+                                <h3 id="instructor-name" class="fw-bold mb-2">Nicolás Melia</h3>
+                                <p id="instructor-title" class="text-secondary mb-3"></p>
+                                <div id="instructor-bio" class="mb-3">
+                                    <p>Diego es un desarrollador full stack con más de 10 años de experiencia en la industria. Especializado en JavaScript y Python, ha trabajado en proyectos para empresas como Google y Amazon.</p>
+                                </div>
+                                <div class="d-flex gap-3">
+                                    <a href="#" id="instructor-linkedin" class="text-secondary"><i class="fab fa-linkedin fa-lg"></i></a>
+                                    <a href="#" id="instructor-github" class="text-secondary"><i class="fab fa-github fa-lg"></i></a>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <!-- <section class="py-5">
+        <div class="container">
+            <h2 class="fw-bold text-center mb-5">Lo que dicen nuestros estudiantes</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="testimonial-card h-100">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Estudiante" class="rounded-circle me-3" width="50">
+                            <div>
+                                <h5 class="mb-0">María González</h5>
+                                <div class="text-warning">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p id="testimonial-text-1" class="mb-0">"Este curso transformó mi carrera. Pasé de no saber nada de programación a conseguir mi primer trabajo como desarrollador en 3 meses."</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="testimonial-card h-100">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Estudiante" class="rounded-circle me-3" width="50">
+                            <div>
+                                <h5 class="mb-0">Carlos Sánchez</h5>
+                                <div class="text-warning">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p id="testimonial-text-2" class="mb-0">"La metodología de aprendizaje basada en proyectos es excelente. Pude aplicar lo aprendido inmediatamente en mi trabajo."</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="testimonial-card h-100">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Estudiante" class="rounded-circle me-3" width="50">
+                            <div>
+                                <h5 class="mb-0">Laura Fernández</h5>
+                                <div class="text-warning">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p id="testimonial-text-3" class="mb-0">"Los instructores son muy claros y los proyectos prácticos me ayudaron a consolidar mi conocimiento. Muy recomendado."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- CTA Section -->
+    <section class="py-5 bg-primary text-white">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-4">¿Listo para comenzar?</h2>
+            <p class="lead mb-5">Únete a los estudiantes que ya están transformando sus carreras con nuestros cursos.</p>
+            <a href="https://api.whatsapp.com/send/?phone=%2B5493512445290&text&type=phone_number&app_absent=0" class="btn btn-light btn-lg px-5">Inscribirse Ahora</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h3 class="fw-bold mb-4">Cod.AR</h3>
+                    <p>Transformando vidas a través de la educación en programación desde 2015.</p>
+                    <div class="d-flex gap-3">
+                        <!-- <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a> -->
+                            <a href="https://www.instagram.com/codigo_argentino/" class="text-white"><i class="fab fa-instagram"></i></a>
+                            <a href="https://api.whatsapp.com/send/?phone=%2B5493512445290&text&type=phone_number&app_absent=0" class="text-white"><i class="fa-solid fa-phone"></i></a>
+                            <!-- <a href="#"><i class="fab fa-youtube"></i></a> -->
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
+                    <h4 class="fw-bold mb-4">Cursos</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Python</a></li>
+                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Java</a></li>
+                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">JavaScript</a></li>
+                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Web Design</a></li>
+                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">R</a></li>
+                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Programación para niños</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
+                    <h4 class="fw-bold mb-4">Compañía</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="./index.html#about" class="text-white-50 text-decoration-none">Sobre Nosotros</a></li>
+                        <li class="mb-2"><a href="./index.html#team" class="text-white-50 text-decoration-none">Nuestro Equipo</a></li>
+                        <!-- <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Carreras</a></li>
+                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Blog</a></li> -->
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <h4 class="fw-bold mb-4">Contacto</h4>
+                    <ul class="list-unstyled">
+                        <!-- <li class="mb-2"><i class="fas fa-map-marker-alt me-2"></i> Av. Programación 123, Buenos Aires</li> -->
+                        <li class="mb-2"><i class="fas fa-phone me-2"></i> +54 351 2445-290</li>
+                        <li class="mb-2"><i class="fas fa-envelope me-2"></i> clases@codigoargentino.cc</li>
+                    </ul>
+                </div>
+            </div>
+                <!-- <hr class="my-4 bg-secondary">
+                <div class="text-center">
+                    <p class="mb-0">&copy; 2023 Cod.AR. Todos los derechos reservados.</p>
+                </div> -->
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Script para manejar los parámetros de la URL -->
+    <script type="module" src="./js/course.js"></script>
 </body>
-<script type="module" src="./js/course.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
 </html>
