@@ -82,17 +82,17 @@ body {
 }
 
 .beginner {
-    background-color: rgba(0, 126, 71, 0.1);
+    background-color: #d2f1e1;
     color: var(--secondary);
 }
 
 .intermediate {
-    background-color: rgba(0, 52, 89, 0.1);
+    background-color: #d0d8f1;
     color: var(--primary);
 }
 
 .advanced {
-    background-color: rgba(0, 23, 31, 0.1);
+    background-color: #c0c5cc;
     color: var(--dark);
 }
 
