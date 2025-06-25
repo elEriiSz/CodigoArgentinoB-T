@@ -280,11 +280,18 @@
             font-weight: 700;
             color: var(--primary);
             margin-bottom: 1.5rem;
+            margin: auto;
+            width: 50%;
+            text-align: center;
+            padding-bottom: 20px;
         }
         
         .about p {
             color: #555;
             margin-bottom: 1.5rem;
+            margin: auto;
+            text-align: center;
+            padding-bottom: 10px;
         }
         
         .about-img {
@@ -297,7 +304,7 @@
             width: 100%;
             height: auto;
         }
-        
+ 
         /* Team Section */
         .team {
             padding: 5rem 0;
