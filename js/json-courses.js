@@ -8,7 +8,7 @@ const courses = {
                 levelText: 'Principiante',
                 duration: '8 clases',
                 students: '1200+ estudiantes',
-                image: 'https://images.unsplash.com/photo-1526379095098-d400fd0bf935?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80',
+                image: '../assets/img/courses/python-icon.webp',
                 about: `
                     <p>Este curso te introducirá al fascinante mundo de la programación con Python, uno de los lenguajes más populares y versátiles de la actualidad.</p>
                     <p>Aprenderás desde los conceptos más básicos hasta temas intermedios que te permitirán desarrollar tus propios programas y aplicaciones.</p>
@@ -84,7 +84,7 @@ const courses = {
                 levelText: 'Intermedio',
                 duration: '8 clases',
                 students: '1500+ estudiantes',
-                image: '../../assets/icons/courses/js.webp',
+                image: '../assets/img/courses/js-icon.webp',
                 //image: 'https://images.unsplash.com/photo-1579468118864-1b9ea3c0db4a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80',
                 about: `
                     <p>Domina JavaScript moderno con este curso que cubre desde los fundamentos hasta conceptos avanzados.</p>
