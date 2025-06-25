@@ -15,9 +15,6 @@
             --azul: #003459;
             --azul_oscuro: #00171F;
             
-            --secondary: var(--celeste);
-            --secondary_hover: var(--celeste_oscuro);
-            --accent: var(--celeste);
 
         }
         
@@ -539,7 +536,7 @@
 
         .hot-sale-container{
             width: 100%;
-            background-color:#b6cadd; /*#babab8*/
+            background-color:var(--secondary); /*#babab8*/
         }
 
         .hot-sale-header{
@@ -547,6 +544,7 @@
             color: rgba(33, 37, 41, 0.75);
             display: flex;
             justify-content: center;
+            background-color:var(--secondary); /*#babab8*/
         }
 
         .hot-sale-header strong{
