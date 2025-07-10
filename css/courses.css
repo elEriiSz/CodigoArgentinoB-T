@@ -5,6 +5,12 @@
     --light: #FFFFFF;
     --accent: #007E47;
     --trial: #FCBF34;
+
+    --blanco: #FFFFFF;
+    --celeste: #007EA7;
+    --celeste_oscuro: #006080;
+    --azul: #003459;
+    --azul_oscuro: #00171F;
 }
         
 body {
@@ -157,4 +163,8 @@ body {
 
 .hiden{
     display: none;
+}
+
+.inscription{
+    background: linear-gradient(135deg, var(--celeste), var(--celeste_oscuro));
 }
