@@ -277,17 +277,13 @@
             font-weight: 700;
             color: var(--primary);
             margin-bottom: 1.5rem;
-            margin: auto;
-            width: 50%;
-            text-align: center;
-            padding-bottom: 20px;
+            text-align: justify;
         }
         
         .about p {
             color: #555;
             margin-bottom: 1.5rem;
-            margin: auto;
-            text-align: center;
+            text-align: justify;
             padding-bottom: 10px;
         }
         
