@@ -169,7 +169,7 @@ const courses = {
             },
             'pyintermedio': {
                 title: 'Python Nivel Intermedio',
-                description: 'Consolide habilidades fundamentales de Python y comenzar con conceptos clave para escalar hacia la programación profesional.',
+                description: 'Consolide habilidades fundamentales de Python y comience con conceptos clave para escalar hacia la programación profesional.',
                 level: 'intermediate',
                 levelText: 'Intermedio',
                 duration: '8 clases',
