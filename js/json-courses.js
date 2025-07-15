@@ -26,22 +26,6 @@ const courses = {
                     'Computadora con Windows 10 o superior / Linux / MacOS',
                     'Conocimientos previos: no es necesario'
                 ],
-                // syllabus: [
-                //     { title: 'Introducción a Python', items: ['Instalación y configuración', 'Hola Mundo', 'Variables y tipos de datos'] },
-                //     { title: 'Estructuras de control', items: ['Condicionales', 'Bucles', 'Funciones'] },
-                //     { title: 'Estructuras de datos', items: ['Listas', 'Tuplas', 'Diccionarios', 'Sets'] },
-                //     { title: 'Programación Orientada a Objetos', items: ['Clases y objetos', 'Herencia', 'Polimorfismo'] },
-                //     { title: 'Proyecto Final', items: ['Desarrollo de una aplicación completa'] }
-                // ],
-                instructors: [
-                    instructors.nico,
-                    instructors.mar
-                ]
-                // testimonials: [
-                //     '"Este curso transformó mi carrera. Pasé de no saber nada de programación a conseguir mi primer trabajo como desarrollador en 3 meses."',
-                //     '"La metodología de aprendizaje basada en proyectos es excelente. Pude aplicar lo aprendido inmediatamente en mi trabajo."',
-                //     '"Los instructores son muy claros y los proyectos prácticos me ayudaron a consolidar mi conocimiento. Muy recomendado."'
-                // ]
             },
             'java': {
                 title: 'Java',
@@ -55,27 +39,12 @@ const courses = {
                     <p>Este curso avanzado de Java está diseñado para personas que quieran llevar sus habilidades al siguiente nivel.</p>
                     <p>Aprenderás conceptos avanzados como POO, y estarás en condiciones de encaminarte en el mundo de la programación en Android.</p>
                 `,
-                learnList: null,
+                learnList: [],
                 requirements: [
                     'Buena conexión a internet',
                     'Computadora con Windows 10 o superior / Linux / MacOS',
                     'Conocimientos previos: no es necesario'
                 ],
-                // syllabus: [
-                //     { title: 'Java Avanzado', items: ['Streams API', 'Expresiones Lambda', 'Optional'] },
-                //     { title: 'Concurrencia', items: ['Hilos', 'Executors', 'Fork/Join'] },
-                //     { title: 'Patrones de Diseño', items: ['Singleton', 'Factory', 'Observer', 'Strategy'] },
-                //     { title: 'Testing', items: ['JUnit 5', 'Mockito', 'Test Containers'] },
-                //     { title: 'Proyecto Final', items: ['Aplicación empresarial completa'] }
-                // ],
-                instructors: [
-                    instructors.nico,
-                ]
-                // testimonials: [
-                //     '"El curso más completo de Java avanzado que he tomado. Los patrones de diseño explicados aquí me ayudaron a mejorar mucho mi código."',
-                //     '"Ana es una instructora excepcional. Explica conceptos complejos de manera muy clara."',
-                //     '"Los proyectos prácticos son muy realistas y similares a lo que encontrarás en el mundo real."'
-                // ]
             },
             'javascript': {
                 title: 'JavaScript',
@@ -90,27 +59,12 @@ const courses = {
                     <p>Domina JavaScript moderno con este curso que cubre desde los fundamentos hasta conceptos avanzados.</p>
                     <p>En este curso, los estudiantes dominarán JavaScript para crear funcionalidades avanzadas, manipular el DOM y trabajar con frameworks modernos, construyendo proyectos reales y aplicaciones completamente funcionales.</p>
                 `,
-                learnList: null,
-                // syllabus: [
-                //     { title: 'JavaScript Moderno', items: ['Let/Const', 'Arrow Functions', 'Template Literals'] },
-                //     { title: 'DOM Manipulation', items: ['Selectores', 'Eventos', 'Creación dinámica'] },
-                //     { title: 'Async JS', items: ['Promesas', 'Async/Await', 'Fetch API'] },
-                //     { title: 'Frameworks', items: ['Introducción a React', 'Introducción a Vue'] },
-                //     { title: 'Proyecto Final', items: ['Aplicación SPA completa'] }
-                // ],
+                learnList: [],
                 requirements: [
                     'Buena conexión a internet',
                     'Computadora con Windows 10 o superior / Linux / MacOS',
                     'Conocimientos previos: no es necesario'
                 ],
-                instructors: [
-                    
-                ]
-                // testimonials: [
-                //     '"Finalmente entiendo JavaScript moderno después de años de luchar con conceptos como promesas y async/await."',
-                //     '"Carlos explica los conceptos de manera muy clara. Los ejemplos prácticos son excelentes."',
-                //     '"El proyecto final fue un gran desafío pero aprendí más haciendo eso que en meses de estudio por mi cuenta."'
-                // ]
             },
             'wd': {
                 title: 'Web Design',
@@ -123,27 +77,12 @@ const courses = {
                 about: `
                     <p>Aprende a crear sitios web interactivos y modernos desde cero. En este curso, los estudiantes dominarán HTML, CSS y JavaScript para diseñar páginas web funcionales, adaptables y visualmente atractivas.</p>
                 `,
-                learnList: null,
-                // syllabus: [
-                //     { title: 'JavaScript Moderno', items: ['Let/Const', 'Arrow Functions', 'Template Literals'] },
-                //     { title: 'DOM Manipulation', items: ['Selectores', 'Eventos', 'Creación dinámica'] },
-                //     { title: 'Async JS', items: ['Promesas', 'Async/Await', 'Fetch API'] },
-                //     { title: 'Frameworks', items: ['Introducción a React', 'Introducción a Vue'] },
-                //     { title: 'Proyecto Final', items: ['Aplicación SPA completa'] }
-                // ],
+                learnList: [],
                 requirements: [
                     'Buena conexión a internet',
                     'Computadora con Windows 10 o superior / Linux / MacOS',
                     'Conocimientos previos: no es necesario'
                 ],
-                instructors: [
-                    instructors.nico
-                ]
-                // testimonials: [
-                //     '"Finalmente entiendo JavaScript moderno después de años de luchar con conceptos como promesas y async/await."',
-                //     '"Carlos explica los conceptos de manera muy clara. Los ejemplos prácticos son excelentes."',
-                //     '"El proyecto final fue un gran desafío pero aprendí más haciendo eso que en meses de estudio por mi cuenta."'
-                // ]
             },
             'r': {
                 title: 'Analisis de Datos con R',
@@ -156,27 +95,12 @@ const courses = {
                 about: `
                     <p>Descubre el poder de los datos con R, el lenguaje líder en análisis estadístico y ciencia de datos. En este curso, los estudiantes aprenderán a manipular datos, crear visualizaciones impactantes y resolver problemas reales usando herramientas profesionales</p>
                 `,
-                learnList: null,
-                // syllabus: [
-                //     { title: 'JavaScript Moderno', items: ['Let/Const', 'Arrow Functions', 'Template Literals'] },
-                //     { title: 'DOM Manipulation', items: ['Selectores', 'Eventos', 'Creación dinámica'] },
-                //     { title: 'Async JS', items: ['Promesas', 'Async/Await', 'Fetch API'] },
-                //     { title: 'Frameworks', items: ['Introducción a React', 'Introducción a Vue'] },
-                //     { title: 'Proyecto Final', items: ['Aplicación SPA completa'] }
-                // ],
+                learnList: [],
                 requirements: [
                     'Buena conexión a internet',
                     'Computadora con Windows 10 o superior / Linux / MacOS',
                     'Conocimientos previos: no es necesario'
                 ],
-                instructors: [
-                    instructors.nico
-                ]
-                // testimonials: [
-                //     '"Finalmente entiendo JavaScript moderno después de años de luchar con conceptos como promesas y async/await."',
-                //     '"Carlos explica los conceptos de manera muy clara. Los ejemplos prácticos son excelentes."',
-                //     '"El proyecto final fue un gran desafío pero aprendí más haciendo eso que en meses de estudio por mi cuenta."'
-                // ]
             },
             'ppn': {
                 title: 'Programamción para Niños',
@@ -198,27 +122,12 @@ const courses = {
                         <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Colaboración.</li>
                     </ul>
                 `,
-                learnList: null,
-                // syllabus: [
-                //     { title: 'JavaScript Moderno', items: ['Let/Const', 'Arrow Functions', 'Template Literals'] },
-                //     { title: 'DOM Manipulation', items: ['Selectores', 'Eventos', 'Creación dinámica'] },
-                //     { title: 'Async JS', items: ['Promesas', 'Async/Await', 'Fetch API'] },
-                //     { title: 'Frameworks', items: ['Introducción a React', 'Introducción a Vue'] },
-                //     { title: 'Proyecto Final', items: ['Aplicación SPA completa'] }
-                // ],
+                learnList: [],
                 requirements: [
                     'Buena conexión a internet',
                     'Computadora con Windows 10 o superior / Linux / MacOS',
                     'Conocimientos previos: no es necesario'
                 ],
-                instructors: [
-                    instructors.mar
-                ]
-                // testimonials: [
-                //     '"Finalmente entiendo JavaScript moderno después de años de luchar con conceptos como promesas y async/await."',
-                //     '"Carlos explica los conceptos de manera muy clara. Los ejemplos prácticos son excelentes."',
-                //     '"El proyecto final fue un gran desafío pero aprendí más haciendo eso que en meses de estudio por mi cuenta."'
-                // ]
             }
         };
 
