@@ -15,16 +15,12 @@ function changeParagraphsMinHeight() {
   const paragraphs = document.querySelectorAll('.course-content p');
   let max_height = 0;
   for (var i = 0; i < paragraphs.length; i++) {
-    console.log(paragraphs[i].innerText);
-    console.log(paragraphs[i].offsetHeight);
     if(paragraphs[i].offsetHeight > max_height){
       max_height = paragraphs[i].offsetHeight;
     };
   };
   for (var i = 0; i < paragraphs.length; i++) {
     paragraphs[i].style.minHeight = `${max_height}px`;
-    console.log(paragraphs[i].innerText);
-    console.log(paragraphs[i].style.minHeight);
   };
 };
 changeParagraphsMinHeight();
