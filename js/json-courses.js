@@ -2,7 +2,7 @@ import { instructors } from "./json-instructors.js";
 
 const courses = {
             'python': {
-                title: 'Python',
+                title: 'Python Nivel Inicial',
                 description: 'Aprende los fundamentos de Python, desde sintaxis básica hasta estructuras de datos y programación orientada a objetos.',
                 level: 'beginner',
                 levelText: 'Principiante',
@@ -14,16 +14,16 @@ const courses = {
                     <p>Aprenderás desde los conceptos más básicos hasta temas intermedios que te permitirán desarrollar tus propios programas y aplicaciones.</p>
                 `,
                 learnList: [
-                    'Fundamentos de programación',
-                    'Sintaxis de Python',
-                    'Estructuras de datos',
-                    'Programación orientada a objetos',
-                    'Manejo de archivos',
-                    'Proyectos prácticos'
+                    'Fundamentos de la Programacion',
+                    'Estructuras de Control',
+                    'Metodos y Modularidad',
+                    'Estructuras Dinamicas de Datos'
                 ],
                 requirements: [
                     'Buena conexión a internet',
                     'Computadora con Windows 10 o superior / Linux / MacOS',
+                    'Procesador minimo: Dual Core 64 bits (I3, Ryzen 3, o equivalente)',
+                    'Microfono',
                     'Conocimientos previos: no es necesario'
                 ],
             },
@@ -39,10 +39,18 @@ const courses = {
                     <p>Este curso avanzado de Java está diseñado para personas que quieran llevar sus habilidades al siguiente nivel.</p>
                     <p>Aprenderás conceptos avanzados como POO, y estarás en condiciones de encaminarte en el mundo de la programación en Android.</p>
                 `,
-                learnList: [],
+                learnList: [
+                    'Fundamentos de la Programacion',
+                    'Estructuras de Control',
+                    'Metodos y Modularidad',
+                    'Estructura Dinamica de Datos',
+                    'Introduccion a la Programacion Orientada a Objetos (POO)' 
+                ],
                 requirements: [
                     'Buena conexión a internet',
                     'Computadora con Windows 10 o superior / Linux / MacOS',
+                    'Memoria RAM: 1GB Mínimo - 4GB Recomendado',
+                    'Microfono',
                     'Conocimientos previos: no es necesario'
                 ],
             },
@@ -59,10 +67,18 @@ const courses = {
                     <p>Domina JavaScript moderno con este curso que cubre desde los fundamentos hasta conceptos avanzados.</p>
                     <p>En este curso, los estudiantes dominarán JavaScript para crear funcionalidades avanzadas, manipular el DOM y trabajar con frameworks modernos, construyendo proyectos reales y aplicaciones completamente funcionales.</p>
                 `,
-                learnList: [],
+                learnList: [
+                    'Entornos de trabajo e Introducción a JavaScript',
+                    'Estructuras fundamentales',
+                    'Nociones avanzadas',
+                    'Manejo de librerías y Consumir una API'
+                ],
                 requirements: [
                     'Buena conexión a internet',
                     'Computadora con Windows 10 o superior / Linux / MacOS',
+                    'Memoria RAM: 1GB minimo - recomendado 4GB',
+                    'Procesador minimo: Dual Core 64 bits (I3, Ryzen 3, o equivalente)',
+                    'Microfono',
                     'Conocimientos previos: no es necesario'
                 ],
             },
@@ -77,10 +93,12 @@ const courses = {
                 about: `
                     <p>Aprende a crear sitios web interactivos y modernos desde cero. En este curso, los estudiantes dominarán HTML, CSS y JavaScript para diseñar páginas web funcionales, adaptables y visualmente atractivas.</p>
                 `,
-                learnList: [],
-                requirements: [
+                learnList: [
                     'Buena conexión a internet',
                     'Computadora con Windows 10 o superior / Linux / MacOS',
+                    'Memoria RAM: 1GB Mínimo - 4GB Recomendado',
+                    'Procesador minimo: Dual Core 64 bits (I3, Ryzen 3, o equivalente)',
+                    'Microfono',
                     'Conocimientos previos: no es necesario'
                 ],
             },
@@ -95,10 +113,25 @@ const courses = {
                 about: `
                     <p>Descubre el poder de los datos con R, el lenguaje líder en análisis estadístico y ciencia de datos. En este curso, los estudiantes aprenderán a manipular datos, crear visualizaciones impactantes y resolver problemas reales usando herramientas profesionales</p>
                 `,
-                learnList: [],
+                learnList: [
+                    'Introducción a R y RStudio',
+                    'Operaciones Básicas y Estructuras de Datos',
+                    'Estructuras de Control y Repeticion',
+                    'Metodos',
+                    'Importacion y Manipulacíon de Datos',
+                    'Exploracion y Resumen de Datos',
+                    'Visualizacíon de Datos con ggplot2',
+                    'Analisis Estadístico en R',
+                    'Preparacíon de Datos para Modelado',
+                    'Introducción a Modelos Predictivos en R',
+                    'Reportes y Comunicacion de Resultados'
+                ],
                 requirements: [
                     'Buena conexión a internet',
                     'Computadora con Windows 10 o superior / Linux / MacOS',
+                    'Memoria RAM: 1GB Mínimo - 4GB Recomendado',
+                    'Procesador minimo: Dual Core 64 bits (I3, Ryzen 3, o equivalente)',
+                    'Microfono',
                     'Conocimientos previos: no es necesario'
                 ],
             },
@@ -122,11 +155,72 @@ const courses = {
                         <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Colaboración.</li>
                     </ul>
                 `,
-                learnList: [],
+                learnList: [
+                    'Conceptos basicos de la programación',
+                    'A desarrollar la logca y creatividad'
+                ],
                 requirements: [
                     'Buena conexión a internet',
                     'Computadora con Windows 10 o superior / Linux / MacOS',
+                    'Procesador: I3 en adelante',
+                    'Mouse',
                     'Conocimientos previos: no es necesario'
+                ],
+            },
+            'pyintermedio': {
+                title: 'Python Nivel Intermedio',
+                description: 'Consolide habilidades fundamentales de Python y comenzar con conceptos clave para escalar hacia la programación profesional.',
+                level: 'intermediate',
+                levelText: 'Intermedio',
+                duration: '8 clases',
+                students: '1200+ estudiantes',
+                image: './assets/img/courses/python-icon.webp',
+                about: `
+                    <p>En este curso afianzaras las bases de Python, explorando funciones de manera mas profunda y dominando las estructuras de datos esenciales</p>
+                    <p>Tambien aprenderás a hacer que tu codigo sea mas robusto, permitiendote manejar errores de forma efectiva, y te introduce en los principio de la Programación Orientada a Objetos (POO)</p>
+                `,
+                learnList: [
+                  'Manejo avanzado de Funciones',
+                  'Listas, Tuplas, y COmprensión de Listas',
+                  'Diccionarios y Conjuntos(Sets)',
+                  'Módulos, Librerías y Entornos profesionales',
+                  'Archivos y Persistencia de Datos',
+                  'Manejo de Errores y Depuracíon',
+                  'Programación Orientada a Objetos'
+                ],
+                requirements: [
+                    'Buena conexión a internet',
+                    'Computadora con Windows 10 o superior / Linux / MacOS',
+                    'Procesador minimo: Dual Core 64 bits (I3, Ryzen 3, o equivalente)',
+                    'Memoria RAM: 1GB Mínimo - 4GB Recomendado',
+                    'Microfono',
+                    'Conocimientos previos: Python Nivel Inicial'
+                ],
+            },
+            'analisispy': {
+                title: 'Analisis de Datos con Python',
+                description: 'Aprende a analizar datos con Python usando librerias que facilitan el analisis y la visualizacion de datos',
+                level: 'intermediate',
+                levelText: 'Intermedio',
+                duration: '8 clases',
+                students: '1200+ estudiantes',
+                image: './assets/img/courses/python-icon.webp',
+                about: `
+                    <p>En este curso vas a obtener nociones sólidas sobre el manejo de datos especiales en Python, así como la visualización de estadísticas e información especial desde la Web.</p>
+                    <p>Internalizaras el uso, y conoceras la facilidad de distintas librerías en Python</p>
+                    <p>Aprenderas cómo se comportan los pedidos HTTPS y a ser robusto a la hora de hacer programas.</p>
+                `,
+                learnList: [
+                    'Librerías de uso estadístico y matemático',
+                    'Introducción a los pedidos HTTP'
+                ],
+                requirements: [
+                    'Buena conexión a internet',
+                    'Computadora con Windows 10 o superior / Linux / MacOS',
+                    'Procesador minimo: Dual Core 64 bits (I3, Ryzen 3, o equivalente)',
+                    'Memoria RAM: 1GB Mínimo - 4GB Recomendado',
+                    'Microfono',
+                    'Conocimientos previos: Python Nivel Inicial'
                 ],
             }
         };
