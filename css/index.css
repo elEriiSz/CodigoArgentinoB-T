@@ -427,7 +427,7 @@
         .cta {
             padding: 5rem 0;
             text-align: center;
-            background: linear-gradient(135deg, var(--primary), var(--dark));
+            background: linear-gradient(135deg, var(--celeste), var(--celeste_oscuro));
             color: white;
             margin: 3rem 0;
         }
@@ -447,7 +447,7 @@
         
         /* Footer */
         footer {
-            background-color: var(--dark);
+            background-color: var(--azul);
             color: white;
             padding: 5rem 0 2rem;
         }
