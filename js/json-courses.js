@@ -204,7 +204,7 @@ const courses = {
                 levelText: 'Intermedio',
                 duration: '8 clases',
                 students: '1200+ estudiantes',
-                image: './assets/img/courses/python-icon.webp',
+                image: './assets/img/courses/analisis-python.jpeg',
                 about: `
                     <p>En este curso vas a obtener nociones sólidas sobre el manejo de datos especiales en Python, así como la visualización de estadísticas e información especial desde la Web.</p>
                     <p>Internalizaras el uso, y conoceras la facilidad de distintas librerías en Python</p>
