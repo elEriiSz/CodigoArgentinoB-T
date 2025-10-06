@@ -94,9 +94,15 @@ const courses = {
                     <p>Aprende a crear sitios web interactivos y modernos desde cero. En este curso, los estudiantes dominarán HTML, CSS y JavaScript para diseñar páginas web funcionales, adaptables y visualmente atractivas.</p>
                 `,
                 learnList: [
+                    'Dominarás la trilogía fundamental del desarrollo web: HTML para la estructura, CSS para el diseño y JavaScript para la interactividad.',
+                    'Podrás crear diseños web modernos y funcionales, aplicando técnicas como Flexbox y asegurando que tu sitio se vea perfecto en cualquier dispositivo (diseño responsive).',
+                    'Desarrollarás la lógica básica de la programación a través de JavaScript, aprendiendo a manipular elementos de la página web (DOM) para hacerla dinámica y atractiva.',
+                    'Tendrás la experiencia de construir un Proyecto Final integral, aplicando y vinculando todos los conocimientos adquiridos para crear una página web completa desde cero.'
+                ],
+                requirements: [
                     'Buena conexión a internet',
                     'Computadora con Windows 10 o superior / Linux / MacOS',
-                    'Memoria RAM: 1GB Mínimo - 4GB Recomendado',
+                    'Memoria RAM: 1GB minimo - recomendado 4GB',
                     'Procesador minimo: Dual Core 64 bits (I3, Ryzen 3, o equivalente)',
                     'Microfono',
                     'Conocimientos previos: no es necesario'
