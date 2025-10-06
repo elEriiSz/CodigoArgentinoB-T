@@ -240,5 +240,5 @@ footer {
 }
 
 .inscription{
-    background: linear-gradient(135deg, var(--celeste), var(--celeste_oscuro));
+    background: linear-gradient(180deg, var(--celeste), var(--azul));
 }
