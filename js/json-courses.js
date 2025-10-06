@@ -89,7 +89,7 @@ const courses = {
                 levelText: 'Principiante',
                 duration: '8 clases',
                 students: '1500+ estudiantes',
-                image: 'https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1364&q=80',
+                image: './assets/img/courses/web-design.jpeg',
                 about: `
                     <p>Aprende a crear sitios web interactivos y modernos desde cero. En este curso, los estudiantes dominarán HTML, CSS y JavaScript para diseñar páginas web funcionales, adaptables y visualmente atractivas.</p>
                 `,
