@@ -14,10 +14,11 @@ const courses = {
                     <p>Aprenderás desde los conceptos más básicos hasta temas intermedios que te permitirán desarrollar tus propios programas y aplicaciones.</p>
                 `,
                 learnList: [
-                    'Fundamentos de la Programacion',
-                    'Estructuras de Control',
-                    'Metodos y Modularidad',
-                    'Estructuras Dinamicas de Datos'
+                    'Establecerás una base sólida en programación con Python, dominando los fundamentos como variables, tipos de datos y operadores lógicos y aritméticos.',
+                    'Adquirirás la habilidad para controlar el flujo de ejecución de tus programas, implementando estructuras condicionales (if, else) y ciclos iterativos (for, while) para resolver problemas reales.',
+                    'Aprenderás a escribir código limpio y reutilizable a través de la modularidad, definiendo y utilizando funciones (métodos) que optimicen tus proyectos.',
+                    'Manejarás las estructuras de datos dinámicas más importantes de Python: Listas, Diccionarios, Tuplas y Conjuntos, permitiéndote almacenar y gestionar información de manera eficiente.',
+                    'Desarrollarás un Proyecto Final integral (como un sistema de gestión), aplicando de forma práctica todos los conceptos aprendidos para crear una aplicación funcional desde cero.'
                 ],
                 requirements: [
                     'Buena conexión a internet',
@@ -40,11 +41,11 @@ const courses = {
                     <p>Aprenderás conceptos avanzados como POO, y estarás en condiciones de encaminarte en el mundo de la programación en Android.</p>
                 `,
                 learnList: [
-                    'Fundamentos de la Programacion',
-                    'Estructuras de Control',
-                    'Metodos y Modularidad',
-                    'Estructura Dinamica de Datos',
-                    'Introduccion a la Programacion Orientada a Objetos (POO)' 
+                    'Dominarás los fundamentos de la lógica de programación en Java, incluyendo el control del flujo de tus programas mediante el uso de estructuras condicionales (if/else) y diversos tipos de ciclos (for, while, do-while).',
+                    'Adquirirás la habilidad de escribir código modular, limpio y escalable, aprendiendo a definir, utilizar y sobrecargar métodos para reutilizar funcionalidades.',
+                    'Serás capaz de manejar las estructuras de datos dinámicas esenciales de Java, como ArrayList para listas flexibles y HashMap para el manejo eficiente de datos clave-valor.',
+                    'Recibirás una sólida introducción a la Programación Orientada a Objetos (POO), aprendiendo a crear clases y objetos, usar constructores y aplicar el concepto fundamental de encapsulación (getters y setters).',
+                    'Tendrás la experiencia de desarrollar un Proyecto Final que integra todos los conocimientos teóricos y prácticos, culminando en la creación de una aplicación funcional, como un sistema de gestión básico.' 
                 ],
                 requirements: [
                     'Buena conexión a internet',
@@ -68,10 +69,11 @@ const courses = {
                     <p>En este curso, los estudiantes dominarán JavaScript para crear funcionalidades avanzadas, manipular el DOM y trabajar con frameworks modernos, construyendo proyectos reales y aplicaciones completamente funcionales.</p>
                 `,
                 learnList: [
-                    'Entornos de trabajo e Introducción a JavaScript',
-                    'Estructuras fundamentales',
-                    'Nociones avanzadas',
-                    'Manejo de librerías y Consumir una API'
+                    'Obtendrás una base sólida en la sintaxis de JavaScript, dominando variables, tipos de datos, condicionales y bucles, y configurando tu entorno de desarrollo para trabajar tanto en el navegador como con Node.js.',
+                    'Aprenderás a gestionar y manipular información de manera efectiva utilizando Strings, Arreglos y Objetos, y aplicarás técnicas de refactorización con Funciones para escribir código limpio y reutilizable.',
+                    'Serás introducido a la Programación Orientada a Objetos (POO) y desarrollarás programas robustez mediante el manejo de errores y la modularización del código.',
+                    'Adquirirás la habilidad práctica de consumir APIs REST y trabajar con el formato JSON, permitiéndote integrar datos externos en tus aplicaciones web.',
+                    'Aplicarás todos los conocimientos en un Proyecto Final enfocado en el consumo de una API, ganando experiencia en el desarrollo de una aplicación de utilidad desde cero.'
                 ],
                 requirements: [
                     'Buena conexión a internet',

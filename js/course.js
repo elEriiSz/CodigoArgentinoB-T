@@ -38,7 +38,7 @@ function loadCourseData() {
 
         const learnList = document.getElementById('course-learn-list');
         learnList.innerHTML = course.learnList.slice(0, course.learnList.length).map(item => 
-            `<li class="mb-2"><i class="fas fa-check text-success me-2"></i> ${item}</li>`
+            `<li class="mb-2"><i class="fas fa-check text-success"></i> ${item}</li>`
         ).join('');
     }    
 
