@@ -155,17 +155,12 @@ const courses = {
                 about: `
                     <p>Aprender a programar desde una temprana edad ofrece una gran cantidad de beneficios que van más allá de simplemente preparar a los niños para un futuro.</p>
                     <p>En nuestro de curso de programación en videojuegos los niños descubrirán el mundo de la programación de una manera divertida y aprenderán los conceptos básicos utilizando bloques secuenciales.</p>
-                    <h5>Beneficios cognitivos y de desarrollo:</h5>
-                    <ul class="list-unstyled">
-                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Pensamiento lógico y resolución de problemas.</li>
-                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Creatividad.</li>
-                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Perseverancia.</li>
-                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Colaboración.</li>
-                    </ul>
                 `,
                 learnList: [
-                    'Conceptos basicos de la programación',
-                    'A desarrollar la logca y creatividad'
+                    '🚀 Pensamiento Lógico y Creatividad: Desarrollarán habilidades clave para el futuro, aprendiendo a resolver problemas de manera estructurada y fomentando su creatividad al diseñar sus propias historias y mundos.',
+                    '🧩 Fundamentos de la Programación: Dominarán los conceptos básicos de la programación utilizando la metodología de bloques secuenciales, lo que facilita el aprendizaje de la lógica sin escribir código complejo.',
+                    '🕹️ Creación de Contenido Digital Propio: Convertirán ideas en realidad al crear sus propios juegos y narrativas interactivas en populares plataformas',
+                    '🤝 Desarrollo de Habilidades Blandas: Potenciarán la perseverancia (aprendiendo que el error es parte del proceso) y la colaboración al trabajar en equipo, habilidades esenciales para la vida.'
                 ],
                 requirements: [
                     'Buena conexión a internet',
@@ -219,8 +214,10 @@ const courses = {
                     <p>Aprenderas cómo se comportan los pedidos HTTPS y a ser robusto a la hora de hacer programas.</p>
                 `,
                 learnList: [
-                    'Librerías de uso estadístico y matemático',
-                    'Introducción a los pedidos HTTP'
+                    'Dominarás las librerías esenciales de Python para el Análisis de Datos, incluyendo aquellas para cálculos estadísticos y matemáticos, lo que te permitirá procesar datos de forma eficiente.',
+                    'Adquirirás la habilidad para visualizar datos de manera profesional, transformando estadísticas complejas en gráficos claros e impactantes para facilitar la toma de decisiones.',
+                    'Serás capaz de obtener datos de la web en tiempo real al entender y utilizar los distintos tipos de pedidos HTTP (GET, POST, PUT, DELETE) e interactuar directamente con diversas APIs y archivos JSON.',
+                    'Integrarás todas las habilidades en un Proyecto Final completo, creando un programa que extrae datos de una API y los utiliza para generar sus propios análisis y visualizaciones.'
                 ],
                 requirements: [
                     'Buena conexión a internet',
