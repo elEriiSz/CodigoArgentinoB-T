@@ -21,9 +21,13 @@ function loadCourseData() {
     document.getElementById('course-image').alt = course.title;
     
     // Nivel del curso
-    const levelBadge = document.querySelector('.course-level');
-    levelBadge.className = 'course-level ' + course.level;
-    levelBadge.textContent = course.levelText;
+    if(course.level == 'beginner'){
+        const levelBadge = document.querySelector('.course-level');
+        levelBadge.className = 'course-level ' + course.level;
+        levelBadge.textContent = course.levelText;
+    }else{
+        document.getElementById('level-meter').style.visibility = 'hidden';
+    };
     
     // Sobre el curso
     document.getElementById('course-about').innerHTML = course.about;
