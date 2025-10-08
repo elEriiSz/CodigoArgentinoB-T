@@ -158,7 +158,7 @@
         /* Section Titles */
         .section-title {
             text-align: center;
-            margin: 5rem 0 3rem;
+            margin: 1rem 0 3rem;
             position: relative;
         }
         
@@ -551,6 +551,61 @@
             width: 5vw;
             min-width: 70px;
         }
+
+        /* Express Cards */
+        .express-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+            height: 100%;
+            border: none;
+            margin-bottom: 35px;
+        }
+         
+        .express-img {
+            height: 100%;
+            padding: 30px;
+            overflow: hidden;
+        }
+        
+        .express-img img {
+            width: 100%;
+            height: 100%;
+            border-radius: 15px;
+            border: none;
+            transition: transform 0.5s ease;
+        }
+         
+        .express-content {
+            margin-top: 5%;
+            padding: 1.5rem;
+        }
+        
+        .express-content h3 {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 0.8rem;
+            color: var(--primary);
+        }
+        
+        .express-content p {
+            color: var(--primary);
+            font-weight: 600;
+            font-size: 1.3rem;
+            margin-bottom: 1.2rem;
+        }
+        
+        .express-meta {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid #eee;
+        }
+        
         
         /* Responsive Adjustments */
         @media (max-width: 768px) {
