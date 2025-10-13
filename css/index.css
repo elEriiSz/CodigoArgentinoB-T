@@ -607,8 +607,34 @@
         }
         
         
+        .computadora {
+          display: block;
+        }
+
+        .celular {
+          display: none;
+        }
         /* Responsive Adjustments */
         @media (max-width: 768px) {
+            .computadora {
+              display: none;
+            }
+
+            .celular {
+              display: block; 
+              margin-bottom: 25px;
+            }
+
+            .course-card:hover {
+                transform: translateY(0px);
+                box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+            }
+
+
+            .course-card:hover .course-img img {
+                transform: scale(1.0);
+            }
+
             .hero {
                 padding: 100px 0 60px;
             }
