@@ -669,13 +669,13 @@
 
         .main-slideshow::scroll-button(left) {
           content: "◄";
-          right: calc(anchor(left) - 10px);
+          right: calc(anchor(left) - 60px);
           bottom: calc(anchor(top) - 200px);
         }
 
         .main-slideshow::scroll-button(right) {
           content: "►";
-          left: calc(anchor(right) + 10px);
+          left: calc(anchor(right) - 60px);
           bottom: calc(anchor(top) - 200px);
         }
 
