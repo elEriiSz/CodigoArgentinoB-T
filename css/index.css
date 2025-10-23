@@ -642,42 +642,6 @@
           flex: 0 0 100%;
           scroll-snap-align: center;
         }
-        .main-slideshow::scroll-button(*) {
-          border: 0;
-          font-size: 2rem;
-          background: none;
-          color: black;
-          opacity: 0.7;
-          cursor: pointer;
-          position: absolute;
-          position-anchor: --my-carousel;
-        }
-
-        .main-slideshow::scroll-button(*):hover,
-        .main-slideshow::scroll-button(*):focus {
-          opacity: 1;
-        }
-
-        .main-slideshow::scroll-button(*):active {
-          translate: 1px 1px;
-        }
-
-        .main-slideshow::scroll-button(*):disabled {
-          opacity: 0.2;
-          cursor: unset;
-        }
-
-        .main-slideshow::scroll-button(left) {
-          content: "◄";
-          right: calc(anchor(left) - 60px);
-          bottom: calc(anchor(top) - 200px);
-        }
-
-        .main-slideshow::scroll-button(right) {
-          content: "►";
-          left: calc(anchor(right) - 60px);
-          bottom: calc(anchor(top) - 200px);
-        }
 
         /* Responsive Adjustments */
         @media (max-width: 768px) {
